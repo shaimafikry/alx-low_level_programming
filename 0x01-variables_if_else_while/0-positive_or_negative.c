@@ -2,7 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 
-/*this code takes input and compare if it positive or negetive  */
+/**
+*main - Entry point
+*
+*Description: 'takes input and check if it negeative or positive'
+*
+*Return: Always 0 (Success)
+*/
 
 int main(void)
 {
