@@ -19,11 +19,11 @@ int main(void)
 
 	for (n = 48 ; n <= 57 ; n++)
 	{
-	for (x = 48 ; x < 57 ; x++)
+	for (x = 48 ; x <= 57 ; x++)
 	{
 	for (y = 48 ; y <= 57 ; y++)
 	{
-	for (z = y+1 ; z <= 57 ; z++)
+	for (z = 48 ; z <= 57 ; z++)
 	{
 	if (x != z)
 	{
