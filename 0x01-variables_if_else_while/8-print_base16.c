@@ -5,7 +5,7 @@
 /**
 *main - Entry point
 *
-*Description: 'prints lowercase alphapet in reverse'
+*Description: 'prints  alphapet in hexa'
 *
 *Return: Always 0 (Success)
 */
@@ -14,7 +14,7 @@ int main(void)
 {
 	char n;
 
-	for (n = '48' ; n => '57' ; n++)
+	for (n = 48 ; n <= 57 ; n++)
 	{
 		putchar (n);
 	}
@@ -23,7 +23,6 @@ int main(void)
 		putchar (n);
 	}
 	putchar ('\n');
-	
 	return (0);
 }
 
