@@ -5,7 +5,7 @@
 /**
 *main - Entry point
 *
-*Description: 'prints single numbers'
+*Description: 'prints two combination numbers'
 *
 *Return: Always 0 (Success)
 */
@@ -13,12 +13,20 @@
 int main(void)
 {
 	int n;
+	int x;
 
 	for (n = 48 ; n => 57 ; n++)
 	{
+	for (x = n+1 ; x < 57 ; x++)
+	{
+		if (x != n)
+		{
 		putchar (n);
+		putchar (x);
 		putchar (',')
 		putchar (' ');
+		}
+	}
 	}
 	putchar ('\n');
 	return (0);
