@@ -31,7 +31,7 @@ int main(void)
 		putchar (' ');
 		putchar (y);
 		putchar (z);
-		if ( n == 57 && x == 56 && y == 57 & z == 57 )
+		if ( n == 57 && x == 56 && y == 57 && z == 57 )
 		{
 			break;
 		}
