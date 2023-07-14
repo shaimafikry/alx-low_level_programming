@@ -25,7 +25,7 @@ int main(void)
 	{
 	for (z = 48 ; z <= 57 ; z++)
 	{
-	if (z != x && y != n)
+	if (z != x)
 	{
 		putchar (n);
 		putchar (x);
