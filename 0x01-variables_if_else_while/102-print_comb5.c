@@ -25,8 +25,6 @@ int main(void)
 	{
 	for (z = 48 ; z <= 57 ; z++)
 	{
-	if (n == y && x ==z)
-	{
 	if (n == y && x == z)
 	{
 	if (y != n && z != x)
@@ -42,7 +40,6 @@ int main(void)
 		}
 		putchar (',');
 		putchar (' ');
-	}
 	}
 	}
 	}
