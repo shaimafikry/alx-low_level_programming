@@ -17,9 +17,8 @@ int main(void)
 	
 	for (n = 0 ; n <= 98 ; n++)
 	{
-	for (x = 0 ; x <= 99 ; x++)
+	for (x = n + 1 ; x <= 99 ; x++)
 	{
-		if (x != n)
 		{
 		putchar((n / 10) + '0');
 		putchar((n % 10) + '0');
