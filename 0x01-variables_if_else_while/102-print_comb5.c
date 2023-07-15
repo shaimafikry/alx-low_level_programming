@@ -27,7 +27,9 @@ int main(void)
 	{
 	if (n == y && x ==z)
 	{
-	if (n != y && x != z)
+	if (n == y && x == z)
+ {
+ if (y != n && z != x)
 	{
 		putchar (n);
 		putchar (x);
@@ -45,6 +47,7 @@ int main(void)
 	}
 	}
 	}
+ }
 	putchar ('\n');
 	return (0);
 }
