@@ -25,11 +25,11 @@ int main(void)
 	{
 	for (z = 48 ; z <= 57 ; z++)
 	{
-		if (x != n)
+		if (z == n)
 		{
-		if (y != x)
+		if (y == x)
 		{
-		if (z != y)
+		if (n != y && x!=z)
 		{
 		putchar (n);
 		putchar (x);
