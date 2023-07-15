@@ -25,6 +25,12 @@ int main(void)
 	{
 	for (z = 48 ; z <= 57 ; z++)
 	{
+		if (x != n)
+		{
+		if (y != x)
+		{
+		if (z != y)
+		{
 		putchar (n);
 		putchar (x);
 		putchar (' ');
@@ -36,7 +42,9 @@ int main(void)
 		}
 		putchar (',');
 		putchar (' ');
-	}
+		}
+		}
+		}
 	}
 	}
 	}
