@@ -14,39 +14,21 @@ int main(void)
 {
 	int n;
 	int x;
-	int y;
-	int z;
-
-	for (n = 48 ; n <= 57 ; n++)
+	for (n = 0 ; n <= 98 ; n++)
 	{
-	for (x = 48 ; x <= 57 ; x++)
+	for (x = 0 ; x <= 99 ; x++)
 	{
-	for (y = 48 ; y <= 57 ; y++)
-	{
-	for (z = 48 ; z <= 57 ; z++)
-	{
-		if (z == n)
-		{
-		if (y == x)
-		{
-		if (n != y && x!=z)
-		{
-		putchar (n);
-		putchar (x);
-		putchar (' ');
-		putchar (y);
-		putchar (z);
-		if (n == 57 && x == 56 && y == 57 && z == 57)
+		putchar((n/ 10) + '0');
+		putchar((n % 10) + '0');
+		putchar(' ');
+		putchar((x / 10) + '0');
+		putchar((x % 10) + '0');
+		if (n == 98 && x == 99 )
 		{
 			break;
 		}
 		putchar (',');
 		putchar (' ');
-		}
-		}
-		}
-	}
-	}
 	}
 	}
 	putchar ('\n');
