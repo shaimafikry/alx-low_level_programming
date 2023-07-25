@@ -1,10 +1,8 @@
 #include "main.h"
-
 /**
 *main entry point
 *print putchar as characters
-* using a new fun called _putchar
-* return 0 success
+* return always success
 **/
 int main(void)
 {
