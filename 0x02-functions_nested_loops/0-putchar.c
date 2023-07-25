@@ -6,7 +6,8 @@
 * using a new fun called _putchar
 * return 0 success
 **/
-
+/*entry poin
+**/
 int main(void)
 {
 	_putchar('_');
@@ -18,6 +19,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-	//return 0 success
 	return (0);
 }
