@@ -2,8 +2,7 @@
 /**
 *main entry point
 *print putchar as characters
-* return 0 always success 
-* return  1 error
+* return 0 always success 1 false
 **/
 int main(void)
 {
