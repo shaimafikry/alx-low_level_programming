@@ -9,11 +9,14 @@
 int main(void)
 {
 int n;
-
-for (n = 97 ; n <= 122 ; n++)
+	
+void print_alphabet(n)
 {
-	_putchar(n);
+	for (n = 97 ; n <= 122 ; n++)
+	{
+		_putchar(n);
+	}
+	_putchar('\n');
 }
-_putchar('\n');
 return 0;
 }
