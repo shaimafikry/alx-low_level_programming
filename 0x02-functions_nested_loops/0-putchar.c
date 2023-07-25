@@ -2,7 +2,8 @@
 
 /**
 *main entry point
-*printf putchar
+*print putchar as characters
+* using a new fun called _putchar
 * return 0 success
 **/
 
