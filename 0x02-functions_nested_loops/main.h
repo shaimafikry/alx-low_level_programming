@@ -3,3 +3,4 @@
 *for my c files c in alx
 **/
 char _putchar(char c);
+void print_alphabet(void);
