@@ -5,9 +5,7 @@
 *print putchar as characters
 * using a new fun called _putchar
 * return 0 success
-**/
-/*entry poin
-**/
+	
 int main(void)
 {
 	_putchar('_');
