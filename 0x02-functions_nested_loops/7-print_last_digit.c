@@ -4,18 +4,11 @@
  * @num : integer
  * Return: vale of last digit
  */
-int print_last_digit (int num)
+int print_last_digit(int num)
 {
-	if (num == 0)
-	{
-		return (0);
-	}
-	else if (num < 0)
-	{
-		return (-(num % 10));
-	}
-	else 
-	{
-		return (num % 10); 
-	}
+	int last_d;
+
+	last_d = num % 10;
+	_putchar(last_d + '0');
+	return (last_d);
 }
