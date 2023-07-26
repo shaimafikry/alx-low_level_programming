@@ -2,12 +2,12 @@
 /**
  * _isalpha() - checks  alphabet
  * @c : integer
- * Return : 1 if the input is alphabet
- *		0 if it is not n aplphabet
- **/
+ * Return :
+ * 1 if the input is alphabet
+ * 0 if it is not n aplphabet
+ */
 int _isalpha(int c)
 {
-  
 	if (c >= 97 && c <= 122)
 	{
 		return (1);
@@ -16,8 +16,8 @@ int _isalpha(int c)
 	{
 		return (1);
 	}
-  else
-  {
-    return (0);
-  }
+	else
+	{
+		return (0);
+	}
 }
