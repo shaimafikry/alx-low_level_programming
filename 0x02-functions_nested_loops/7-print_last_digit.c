@@ -6,7 +6,7 @@
  */
 int print_last_digit(int num)
 {
-	unsigned int last_d;
+	int last_d;
 
 	last_d = num % 10;
 	if (num > 0)
@@ -16,7 +16,7 @@ int print_last_digit(int num)
 	}
 	if (num < 0)
 	{
-		_putchar('0' + last_d);
+		_putchar('0' - last_d);
 		return (last_d);
 	}
 	else
