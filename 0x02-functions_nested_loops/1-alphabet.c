@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
-* main entry point
-* print alphabet
-* return 0 success
-**/
-/**
-*void print alphabet
-*print lower case alphabet
-* no return value
-**/
+ * main entry point
+ * print alphabet
+ * return 0 success
+ **/
 void print_alphabet(void)
+/**
+ *void print alphabet
+ *print lower case alphabet
+ * no return value
+ **/
 {
 	int n;
 
