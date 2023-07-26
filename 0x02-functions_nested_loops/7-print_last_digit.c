@@ -12,7 +12,10 @@ int print_last_digit (int num)
 	}
 	else if ( num < 0 )
 	{
-		return (- (num % 10);
-	}	
-	return (num % 10); 
+		return (- (num % 10));
+	}
+	else 
+	{
+		return (num % 10); 
+	}
 }
