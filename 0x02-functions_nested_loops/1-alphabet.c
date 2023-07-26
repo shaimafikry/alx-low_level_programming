@@ -6,8 +6,8 @@
 * return 0 success
 **/
 /**
-*void print alphabet 
-*print lower case alphabet 
+*void print alphabet
+*print lower case alphabet
 * no return value
 **/
 void print_alphabet(void)
