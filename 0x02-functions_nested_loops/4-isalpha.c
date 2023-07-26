@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isalpha () - function to check alphabt.
+ * _isalpha - function to check alphabt.
  *
  * @c: Number to pass to _isalpha function.
  *
