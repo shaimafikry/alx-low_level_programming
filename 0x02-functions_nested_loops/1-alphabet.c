@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_alphabet() entry point
+ * print_alphabet() - prints lowercase alphabet
  * no arguments
  * Return :no return func
  **/
-void print_alphabet()
+void print_alphabet(void)
 {
 	int n;
 
