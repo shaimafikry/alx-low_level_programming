@@ -1,16 +1,10 @@
 #include "main.h"
-
 /**
- * main entry point
- * print alphabet
- * return 0 success
+ * print_alphabet() entry point
+ * no arguments
+ * Return :no return func
  **/
-void print_alphabet(void)
-/**
- *void print alphabet
- *print lower case alphabet
- * no return value
- **/
+void print_alphabet()
 {
 	int n;
 
