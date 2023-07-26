@@ -2,7 +2,7 @@
 /**
  * print_alphabet - prints lowercase alphabet
  * no arguments
- * Return :no return func
+ * Return: no return func
  **/
 void print_alphabet(void)
 {
