@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _islower() - checks lowercase alphabet
+ * _islower - checks lowercase alphabet
  * @c : integer
  * Return :
  * 1 if alphbet is lowercase
