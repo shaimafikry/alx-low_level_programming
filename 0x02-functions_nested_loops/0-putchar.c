@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-*main entry point
-*print putchar as characters
-* return 0 always success 1 false
-**/
+* main - entry point
+* print putchar as characters
+* Return: 0 always success 1 false
+*/
 int main(void)
 {
 	_putchar('_');
