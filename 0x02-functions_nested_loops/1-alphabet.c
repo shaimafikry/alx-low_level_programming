@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet() - prints lowercase alphabet
+ * print_alphabet - prints lowercase alphabet
  * no arguments
  * Return :no return func
  **/
