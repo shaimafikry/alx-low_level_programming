@@ -5,11 +5,7 @@
  */
 void jack_bauer(void)
 {
-	char h;
-	char h2;
-	char m;
-	char m2;
-
+	char h, h2, m, m2;
 	for (h = '0'; h <= '2'; h++)
 	{
 		for (h2 = '0'; h2 <= '9'; h2++)
