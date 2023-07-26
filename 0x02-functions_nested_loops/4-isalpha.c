@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- * _isalpha () - function to check alphabt
+ * _isalpha () - function to check alphabt.
  *
- * @c: Number to pass to _isalpha function
+ * @c: Number to pass to _isalpha function.
+ *
  * Return:
- * 1 if the number is al[habet
- * 0 if the number is not alphabet
+ * 1 if the number is al[habet.
+ * 0 if the number is not alphabet.
  */
 int _isalpha(int c)
 {
