@@ -1,14 +1,19 @@
 #include "main.h"
 
 /**
-* function entry point
+* main entry point
 * print alphabet
-*no return value
+* return 0 success
+**/
+/**
+*void print alphabet 
+*print lower case alphabet 
+* no return value
 **/
 void print_alphabet(void)
 {
 	int n;
-	
+
 	for (n = 97; n <= 122; n++)
 	{
 		_putchar(n);
