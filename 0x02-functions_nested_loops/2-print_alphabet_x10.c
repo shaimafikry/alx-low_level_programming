@@ -1,12 +1,6 @@
 #include "main.h"
-
-/*
- * main - Entry point
- * function
- * Return : 0 Always success
- */
-/*
- * print_alphabet_x10() - prints lowercase alphabet
+/**
+ * print_alphabet_x10 - prints lowercase alphabet
  * no arguments
  * Return :no return value
  */
