@@ -6,6 +6,7 @@
 void jack_bauer(void)
 {
 	char h, h2, m, m2;
+	
 	for (h = '0'; h <= '2'; h++)
 	{
 		for (h2 = '0'; h2 <= '9'; h2++)
@@ -23,7 +24,7 @@ void jack_bauer(void)
 				}
 			}
 		}
-		if (h != '2')
+		if (h == '2')
 		{
 			for (h2 = '0'; h2 <= '3'; h2++)
 			{
