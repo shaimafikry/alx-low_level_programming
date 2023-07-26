@@ -5,11 +5,9 @@
  * Return : 1 if true
  *		0 if false
  **/
-int _islower(c)
+int _islower(int c)
 {
-	int c;
-
-	if (c >= 97 && <= 122)
+	if (c >= 97 && c <= 122)
 	{
 		return 1;
 	}
