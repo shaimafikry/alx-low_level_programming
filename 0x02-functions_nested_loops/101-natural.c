@@ -1,27 +1,22 @@
 #include <stdio.h>
-#include "main.h"
+/*
+* main - entry point
+* sum of multiples of 3 & 5  below 1024
+* Return: 0 Always success
+*/
 
-/**
- * print_to_98 - prints all natural num up to 98
- * @n : integer
- * Return: no return func
- */
-void print_to_98(int n)
+int main(void)
 {
-	if (n <= 98)
-	{
-		for  (n ; n <= 98 ; n++ )
-		{
-			printf("%d, ",n);
-		}
-	}
-	if (n >= 98)
-	{
-		for  (n ; n >= 98 ; n-- )
-		{
-			printf("%d, ",n);
-		}
-	}
-	_putchar('\n');
+	int i, x = 0;
 
+	for (i = 0; i < 1024; i++)
+	{
+			if (i % 3 == 0 || i % 5 == 0)
+			{
+				x = x + i;
+			}
+	}
+	printf("%d\n", x);
+
+	return (0);
 }
