@@ -17,7 +17,14 @@ int main(void)
 		if (n >= 2)
 		{
 			arr[n] = arr[n-1] + arr[n-2];
-			printf("%d, ", arr[n]);
+			if (n == 49)
+			{
+				printf("%d\n", arr[n]);
+			}
+			else
+			{
+				printf("%d, ", arr[n]);
+			}
 		}
 		else
 		{
