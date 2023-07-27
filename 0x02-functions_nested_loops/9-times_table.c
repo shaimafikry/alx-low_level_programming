@@ -40,7 +40,10 @@ void times_table(void)
 						{
 							_putchar(z + '0');
 							_putchar(',');
+							if (z < 9)
+							{
 							_putchar(' ');
+							}
 
 						}
 						_putchar(' ');
