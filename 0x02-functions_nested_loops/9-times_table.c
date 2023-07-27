@@ -18,41 +18,36 @@ void times_table(void)
 						{
 							_putchar((z / 10) + '0');
 							_putchar((z % 10) + '0');
-							_putchar('\n');
 						}
 						else
 						{
-						_putchar(z + '0');
-						_putchar('\n');
+							_putchar(z + '0');
 						}
+						_putchar('\n');
 					}
 					else
 					{
 						if (z > 9)
 						{
-							_putchar(' ');
 							_putchar((z / 10) + '0');
 							_putchar((z % 10) + '0');
-							_putchar(',');
-
 						}
 						else
 						{
-							if (y != 0)
+							if (n != 0)
 							{
-							_putchar(' ');
 							_putchar(' ');	
 							_putchar(z + '0');
-							_putchar(',');
 							}
 							else
 							{
 								_putchar(z + '0');
-								_putchar(',');
 							}
 						}
-					}
+						_putchar(',');
+						_putchar(' ');
 
+					}
 				}
 		}
 }
