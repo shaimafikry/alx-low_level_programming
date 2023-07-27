@@ -34,7 +34,7 @@ void times_table(void)
 						}
 						else
 						{
-							if (n != 0)
+							if (x != 0)
 							{
 							_putchar(' ');	
 							_putchar(z + '0');
