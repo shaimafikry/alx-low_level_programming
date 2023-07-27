@@ -3,7 +3,6 @@
 * times_table - prints table f numbers
 * Return: no value return
 */
-
 void times_table(void)
 {
 	int n, x,z ;
@@ -31,6 +30,7 @@ void times_table(void)
 					{
 						if (z > 9)
 						{
+							_putchar(' ');
 							_putchar((z / 10) + '0');
 							_putchar((z % 10) + '0');
 							_putchar(',');
@@ -38,8 +38,9 @@ void times_table(void)
 						}
 						else
 						{
-							if (z != 0)
+							if (y != 0)
 							{
+							_putchar(' ');
 							_putchar(' ');	
 							_putchar(z + '0');
 							_putchar(',');
@@ -50,8 +51,6 @@ void times_table(void)
 								_putchar(',');
 							}
 						}
-						_putchar(' ');
-
 					}
 
 				}
