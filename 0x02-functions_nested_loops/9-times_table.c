@@ -24,9 +24,10 @@ void times_table(void)
 					{
 						_putchar(z + '0');
 					}
-					if (z != 81)
+					if (x != 9)
 					{
 					_putchar(',');
+					_putchar(' ');
 					_putchar(' ');
 					}
 					else
