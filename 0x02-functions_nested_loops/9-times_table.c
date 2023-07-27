@@ -38,8 +38,17 @@ void times_table(void)
 						}
 						else
 						{
+							if (z != 0)
+							{
+							_putchar(' ');	
 							_putchar(z + '0');
 							_putchar(',');
+							}
+							else
+							{
+								_putchar(z + '0');
+								_putchar(',');
+							}
 						}
 						_putchar(' ');
 
