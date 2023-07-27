@@ -23,5 +23,6 @@ int main(void)
 		{
 			printf("%d, ", arr[n]);
 		}
+	}
 	return (0);
 }
