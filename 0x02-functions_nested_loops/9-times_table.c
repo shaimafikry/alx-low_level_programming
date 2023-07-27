@@ -9,6 +9,7 @@ void times_table(void)
 	int n;
 	int x;
 	int z;
+
 	for (n = 0; n <= 9; n++)
 		{
 			for (x = 0; x <= 9; x++)
@@ -23,9 +24,16 @@ void times_table(void)
 					{
 						_putchar(z + '0');
 					}
+					if (z != 81)
+					{
 					_putchar(',');
 					_putchar(' ');
+					_putchar('\n');
+					}
+					else
+					{
+						_putchar('\n');
+					}
 				}
 		}
 }
-
