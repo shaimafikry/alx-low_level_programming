@@ -12,12 +12,12 @@ int main(void)
 	arr[0] = 1;
 	arr[1] = 2;
 
-	for (n = 0; n < 50; n++)
+	for (n = 0; n <= 50; n++)
 	{
 		if (n >= 2)
 		{
-			arr[n] = arr[n-1] + arr[n-2];
-			if (n == 49)
+			arr[n] = arr[n - 1] + arr[n - 2];
+			if (n == 50)
 			{
 				printf("%d\n", arr[n]);
 			}
