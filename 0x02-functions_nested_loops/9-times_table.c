@@ -15,7 +15,7 @@ void times_table(void)
 		{
 			for (x = 0; x <= 9; x++)
 				{
-					z = n * x;
+					*z = n * x;
 					write( 1,&z,4);
 				}
 		}
