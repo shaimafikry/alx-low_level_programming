@@ -25,22 +25,22 @@ void print_times_table(int n)
 						_putchar(' ');
 					if (z > 9  && z <= 99)
 					{
-							_putchar(' ');
-							_putchar((z / 10) + '0');
-							_putchar((z % 10) + '0');
-						}
-						else if (z > 99)
-						{
-							_putchar((z / 100) + '0');
-							_putchar((z / 10 % 10) + '0');
-							_putchar((z % 10) + '0');
-						}
-						else
-						{
-							_putchar(' ');
-							_putchar(' ');
-							_putchar(z + '0');
-						}
+						_putchar(' ');
+						_putchar((z / 10) + '0');
+						_putchar((z % 10) + '0');
+					}
+					else if (z > 99)
+					{
+						_putchar((z / 100) + '0');
+						_putchar((z / 10 % 10) + '0');
+						_putchar((z % 10) + '0');
+					}
+					else
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(z + '0');
+					}
 					}
 				}
 				_putchar('\n');
