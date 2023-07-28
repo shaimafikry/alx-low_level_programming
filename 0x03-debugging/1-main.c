@@ -1,5 +1,6 @@
 /**
 * main - causes an infinite loop
+* avoiding infinite loop coz of not incermenting of i 
 * Return: 0
 */
 
