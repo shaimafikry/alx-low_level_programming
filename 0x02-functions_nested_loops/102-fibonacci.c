@@ -12,24 +12,24 @@ int main(void)
 	arr[0] = 1;
 	arr[1] = 2;
 
-	for (n = 0; n <= 50; n++)
-	{
-		if (n >= 2)
+		for (n = 0; n < 50; n++)
 		{
-			arr[n] = arr[n - 1] + arr[n - 2];
-			if (n == 50)
+			if (n >= 2)
 			{
-				printf("%d\n", arr[n]);
+				arr[n] = arr[n - 1] + arr[n - 2];
+				if (n == 49)
+				{
+					printf("%u\n", arr[n]);
+				}
+				else
+				{
+					printf("%u, ", arr[n]);
+				}
 			}
 			else
 			{
 				printf("%d, ", arr[n]);
 			}
 		}
-		else
-		{
-			printf("%d, ", arr[n]);
-		}
-	}
-	return (0);
+		return (0);
 }
