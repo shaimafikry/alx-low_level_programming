@@ -1,4 +1,4 @@
-clude "main.h"
+#include "main.h"
 /**
 * mul - multiple of two numbers
 * @a : integr
