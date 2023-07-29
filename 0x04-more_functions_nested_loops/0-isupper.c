@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "main.h"
 /**
 * _isupper - prins upper case letter
@@ -14,5 +15,3 @@ int _isupper(int c)
 	else
 	{
 		return (0);
-	}
-}
