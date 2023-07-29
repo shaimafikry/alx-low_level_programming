@@ -6,18 +6,29 @@
 */
 void print_number(int n)
 {
-	int p = n;
+	unsigned int m, y, count;
 
 	if (n < 0)
 	{
-		p = n * -1;
-		_putchar('-');
+		_putchar(45);
+		m = n * -1;
+	}
+	else
+	{
+		m = n;
 	}
 
-	p = p / 10;
-	if (p != 0)
+	y = m;
+	count = 1;
+
+	while (y > 9)
 	{
-		print_number(p);
+		y /= 10;
+		count *= 10;
 	}
-		_putchar((p % 10) + '0');
+
+	for (; count >= 1; count /= 10)
+	{
+		_putchar(((m / count) % 10) + 48);
+	}
 }
