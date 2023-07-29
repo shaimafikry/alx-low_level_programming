@@ -1,14 +1,14 @@
 #include "main.h"
 /**
 * print_diagonal - print diagonal
-* @ : integer
+* @n: integer
 * Return: no return
 */
 void print_diagonal(int n)
 {
-int x;
-   int y=0;
-	
+	int x;
+	int y=0;
+
 	if (n <= 0)
 	{
 		_putchar('\n');
@@ -17,7 +17,7 @@ int x;
 	{
 		for (x = 0; x < n; x++)
 		{
-			while(y <= x)
+			while (y <= x)
 			{
 				_putchar(' ');
 				y++;
