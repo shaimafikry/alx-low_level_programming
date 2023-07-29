@@ -1,26 +1,32 @@
+#include <stdio.h>
 /**
-* more_numbers - print 0-14 numbers 0 times
-* Return: no return
+* main - enry point
+* Return: 0 Always success
 */
-void more_numbers(void)
+int main(void)
 {
-	char i;
 	int x;
 
-	for (x = 0; x < 10; x++)
+	for (x = 1; x <= 100; x++)
 	{
-		for (i = 0; i <= 14'; i++)
+		if (x % 3 == 0)
 		{
-			if (i > 9)
-			{
-				_putchar((i / 10) + '0');
-				_putchar((i % 10) + '0');
-			}
-			else
-			{
-				_putchar(i + '0');
-			}
+			printf("Fizz ");
 		}
-		_putchar('\n');
+		else if (x % 5 ==0)
+		{
+			printf("Buzz ");
+		}
+		else if (x % 3 == 0 && x % 5 == 0)
+		{
+			printf("FizzBuzz ");
+
+		}
+		else
+		{
+			printf("%d ", x);
+		}
 	}
+	printf("\n");
+	return (0);
 }
