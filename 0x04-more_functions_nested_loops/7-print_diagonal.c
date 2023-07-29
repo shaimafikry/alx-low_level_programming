@@ -1,26 +1,31 @@
+#include "main.h"
 /**
-* more_numbers - print 0-14 numbers 0 times
+* print_diagonal - print diagonal
+* @ : integer
 * Return: no return
 */
-void more_numbers(void)
+void print_diagonal(int n)
 {
-	char i;
-	int x;
-
-	for (x = 0; x < 10; x++)
+int x;
+   int y=0;
+	
+	if (n <= 0)
 	{
-		for (i = 0; i <= 14'; i++)
-		{
-			if (i > 9)
-			{
-				_putchar((i / 10) + '0');
-				_putchar((i % 10) + '0');
-			}
-			else
-			{
-				_putchar(i + '0');
-			}
-		}
 		_putchar('\n');
 	}
+	else
+	{
+		for (x = 0; x < n; x++)
+		{
+			while(y <= x)
+			{
+				_putchar(' ');
+				y++;
+			}
+			y = 0;
+			_putchar('\\');
+			_putchar('\n');
+		}
+	}
+	putchar('\n');
 }
