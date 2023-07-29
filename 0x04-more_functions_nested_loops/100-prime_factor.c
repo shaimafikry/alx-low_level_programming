@@ -5,23 +5,17 @@
 */
 int main(viod)
 {
-	int i;
-	int x;
-	int prime = 2;
+	long int n, f;
 
-	for (x = 2;x <= i; x++)
+	n = 612852475143;
+	for (fp = 2; f <= n; fp++)
 	{
-		for (k = 1; k <= i; k++)
+		if (n % f == 0)
 		{
-		if ( x % k != 0)
-		{
-			if ( k > prime)
-				prime = k;
+			n /= fp;
+			f--;
 		}
-		}
-		
 	}
-	printf("%d", prime);
-	printf("\n");
+	printf("%ld\n", f);
 	return (0);
 }
