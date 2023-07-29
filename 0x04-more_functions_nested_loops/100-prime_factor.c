@@ -1,26 +1,27 @@
+#include <stdio.h>
 /**
-* more_numbers - print 0-14 numbers 0 times
-* Return: no return
+* main - Entry point
+* Return: 0 aways success
 */
-void more_numbers(void)
+int main(viod)
 {
-	char i;
+	int i;
 	int x;
+	int prime = 2;
 
-	for (x = 0; x < 10; x++)
+	for (x = 2;x <= i; x++)
 	{
-		for (i = 0; i <= 14'; i++)
+		for (k = 1; k <= i; k++)
 		{
-			if (i > 9)
-			{
-				_putchar((i / 10) + '0');
-				_putchar((i % 10) + '0');
-			}
-			else
-			{
-				_putchar(i + '0');
-			}
+		if ( x % k != 0)
+		{
+			if ( k > prime)
+				prime = k;
 		}
-		_putchar('\n');
+		}
+		
 	}
+	printf("%d", prime);
+	printf("\n");
+	return (0);
 }
