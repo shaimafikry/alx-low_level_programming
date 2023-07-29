@@ -1,26 +1,27 @@
+#include "main.h"
 /**
-* more_numbers - print 0-14 numbers 0 times
+* print_square - print square based on size
+* @size: integer
 * Return: no return
 */
-void more_numbers(void)
+void print_square(int size)
 {
-	char i;
 	int x;
+	int y;
 
-	for (x = 0; x < 10; x++)
+	if (size <= 0)
 	{
-		for (i = 0; i <= 14'; i++)
-		{
-			if (i > 9)
-			{
-				_putchar((i / 10) + '0');
-				_putchar((i % 10) + '0');
-			}
-			else
-			{
-				_putchar(i + '0');
-			}
-		}
 		_putchar('\n');
+	}
+	else
+	{
+		for (x = 0; x < size; x++)
+		{
+			for (y = 0; y < size; y++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
 	}
 }
