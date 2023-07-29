@@ -1,26 +1,50 @@
+#include "main.h"
 /**
-* more_numbers - print 0-14 numbers 0 times
+* print_number - print integer
+* @n: integer
 * Return: no return
 */
-void more_numbers(void)
+void print_number(int n)
 {
-	char i;
-	int x;
-
-	for (x = 0; x < 10; x++)
+	if (n >= 0)
 	{
-		for (i = 0; i <= 14'; i++)
+		if (n > 999)
 		{
-			if (i > 9)
-			{
-				_putchar((i / 10) + '0');
-				_putchar((i % 10) + '0');
-			}
-			else
-			{
-				_putchar(i + '0');
-			}
+			_putchar((n / 1000) + '0');
+			_putchar((n / 100 % 10) + '0');
+			_putchar((n / 10 % 10) + '0');
+		}	
+		else if (n > 99)
+		{
+			_putchar((n / 100) + '0');
+			_putchar((n / 10 % 10) + '0');
+		}	
+		else if (n > 9)
+		{
+			_putchar((n / 10) + '0');
 		}
-		_putchar('\n');
+		_putchar((n % 10) + '0');
 	}
+	else
+	{
+		n = n * -1; 
+		_putchar('-');
+		if (n > 999)
+		{
+			_putchar((n / 1000) + '0');
+			_putchar((n / 100 % 10) + '0');
+			_putchar((n / 10 % 10) + '0');
+		}	
+		else if (n > 99)
+		{
+			_putchar((n / 100) + '0');
+			_putchar((n / 10 % 10) + '0');
+		}	
+		else if (n > 9)
+		{
+			_putchar((n / 10) + '0');
+		}
+		_putchar((n % 10) + '0');
+	}
+		_putchar('\n');
 }
