@@ -13,11 +13,11 @@ int count = 0;
 
 for (i = 0; str[i] != '\0'; i++)
 {
-		count++;
+count++;
 }
 for (i = 0; i < count; i += 2)
 {
-		_putchar(str[i]);
+_putchar(str[i]);
 }
 	_putchar('\n');
 }
