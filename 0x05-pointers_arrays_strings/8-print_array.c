@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_array - prints every other character
- * @a : a pointer to integer 
+ * @a : a pointer to integer
  * @n :integer
  * Return: no return
  */
@@ -15,13 +15,12 @@ void print_array(int *a, int n)
 	{
 		if (i < n - 1)
 		{
-		printf("%d, ",a[i]);
+		printf("%d, ", a[i]);
 		}
 		else
 		{
-		printf("%d",a[i]);
+		printf("%d", a[i]);
 		}
 	}
-	_putchar('\n');
 }
 
