@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <string.h>
 /**
  * rev_string - prints string into stdout reversed
  * @s : a pointer to char
@@ -10,7 +11,7 @@ void rev_string(char *s)
 {
 	int i;
 	int count = 0;
- int rev = 0;
+	int rev = 0;
  char *m;
 
 	for (i = 0; s[i] != '\0'; i++)
