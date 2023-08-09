@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _strcpy - copy strings src to dest
  * @dest : a pointer to char
@@ -15,6 +15,7 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[i] = src[i];
 	}
-	return (dest + 0;
+	return (dest + 0);
+	free (dest);
 }
 
