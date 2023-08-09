@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * _strcpy - copy strings src to dest
  * @dest : a pointer to char
