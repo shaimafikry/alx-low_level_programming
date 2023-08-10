@@ -31,7 +31,7 @@ int _atoi(char *s)
 			else if (s[i] >= '0' && s[i] <= '9')
 		{
 				num = (s[i] - '0');
-				result *= 10 + num;
+				result = result * 10 + num;
 		}
 		}
 			if(neg % 2 == 0)
