@@ -22,23 +22,20 @@ int _atoi(char *s)
 	}
 	if (check == 0)
 		return (0);
-	else
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (i = 0; s[i] != '\0'; i++)
+		if (s[i] == ';')
+			break;
+		if (s[i] == '-')
+			neg++;
+		else if (s[i] >= '0' && s[i] <= '9')
 		{
-			if (s[i] == ';')
-				break;
-			if (s[i] == '-')
-				neg++;
-			else if (s[i] >= '0' && s[i] <= '9')
-			{
-				num = (s[i] - '0');
-				result = result * 10 + num;
-			}
+			num = (s[i] - '0');
+			result = result * 10 + num;
 		}
-		if (neg % 2 == 0)
-			return (result);
-		else
-			return (-result);
 	}
+	if (neg % 2 == 0)
+		return (result);
+	else
+		return (-result);
 }
