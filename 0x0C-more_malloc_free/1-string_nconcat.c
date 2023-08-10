@@ -45,6 +45,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 				{
 					s3[i] = s2[t];
 					t++;
+					i++;
 				}
 			}
                         else
