@@ -12,7 +12,7 @@ char *_strcpy(char *dest, char *src)
 {
 	int i;
 
-	*dest = NULL;
+	dest = NULL;
 	for (i = 0; src[i] != '\0'; i++)
 	{
 		dest[i] = src[i];
