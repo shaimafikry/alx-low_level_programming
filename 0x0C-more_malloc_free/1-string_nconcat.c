@@ -37,7 +37,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		for (i = 0; i < count + 1;i++)
+		for (i = 0; i < count2 + 1;i++)
 		{
 			if ( s1[m] == '\0')
 			{
