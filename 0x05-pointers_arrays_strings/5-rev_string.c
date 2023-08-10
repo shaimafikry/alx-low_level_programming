@@ -18,6 +18,7 @@ void rev_string(char *s)
 	{
 		count++;
 	}
+	count--;
 	for (m = 0; m < count; m++, count--)
 	{
 		rev = s[m];
