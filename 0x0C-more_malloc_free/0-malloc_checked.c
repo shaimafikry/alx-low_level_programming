@@ -7,9 +7,9 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	if (b == NULL)
-	{
-		_putchar('9');
-		_putchar('8');
-	}
+	int *pointer;
+	
+	pointer = malloc(b);
+	if (pointer == NULL)
+		exit(98);
 }
