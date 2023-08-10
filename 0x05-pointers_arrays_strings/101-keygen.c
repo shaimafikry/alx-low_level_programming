@@ -9,6 +9,7 @@
 
 int main (void)
 {
+	srand(101);
 	rand();
 	return (0);
 }
