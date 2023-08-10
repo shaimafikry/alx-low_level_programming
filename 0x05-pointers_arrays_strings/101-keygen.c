@@ -1,18 +1,17 @@
-#include "main.h"
-
+#include <cstdlib>
+#include <iostream>
+#include <time.h>
 /**
- * puts2 - prints every other character
- * @str : a pointer to char
- * Return: no return
+ * main - Entry
+ * generate valid password
+ * Return: 0 Always success
  */
 
-void puts2(char *str)
+int main (void)
 {
-	int i;
+	int password =0;
 
-	for(i = 0; str[i] != '\0'; i+2)
-	{
-		_putchar(str[i]);
-	}
-	_putchar('\n');
+	srand(time(0));
+	password = rand();
+	return (0);
 }
