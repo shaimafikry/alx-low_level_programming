@@ -12,7 +12,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s3;
 	int count = 0;
-	int i = 0,m = 0, t = 0;
+	int i = 0,m = 0;
+	unsigned int t = 0;
 	int count2 = 0;
 
 	s3 = malloc(sizeof(*s1) + sizeof(*s2) + 1);
