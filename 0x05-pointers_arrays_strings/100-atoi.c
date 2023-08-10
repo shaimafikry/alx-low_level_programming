@@ -13,9 +13,9 @@ int _atoi(char *s)
 	int num = 0;
 	int check = 0;
 
-	for(i = 0; s[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if(s[i] >= '0' && s[i] <= '9')
+		if (s[i] >= '0' && s[i] <= '9')
 		{
 			check++;
 		}
@@ -27,14 +27,14 @@ int _atoi(char *s)
 		for (i = 0; s[i] != '\0'; i++)
 		{
 			if (s[i] == '-')
-				neg++; 
+				neg++;
 			else if (s[i] >= '0' && s[i] <= '9')
 		{
 				num = (s[i] - '0');
 				result = result * 10 + num;
 		}
 		}
-			if(neg % 2 == 0)
+			if (neg % 2 == 0)
 				return (result);
 			else
 				return (-result);
