@@ -37,6 +37,6 @@ int _atoi(char *s)
 			if(neg % 2 == 0)
 				return (result);
 			else
-				return (-result)
+				return (-result);
 	}
 }
