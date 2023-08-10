@@ -28,9 +28,9 @@ int _atoi(char *s)
 		{
 			if (s[i] == ';')
 				break;
-			else if (s[i] == '-')
+			if (s[i] == '-')
 				neg++;
-			else (s[i] >= '0' && s[i] <= '9')
+			else if (s[i] >= '0' && s[i] <= '9')
 			{
 				num = (s[i] - '0');
 				result = result * 10 + num;
