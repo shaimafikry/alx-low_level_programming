@@ -4,8 +4,8 @@
 #include <stdio.h>
 /**
  * _calloc - allocates memory for an array
- * @nmemb : a pointer to string 1
- * @size : a pointer to string 2
+ * @nmemb : unsigned integer
+ * @size : unsigned integer
  * Return: returns a pointer to the allocated memory.
  *	If nmemb or size is 0, then _calloc returns NULL
  *	If malloc fails, then _calloc returns NULL
