@@ -1,6 +1,6 @@
 #include "main.h"
-#include < stdlib.h >
-#include < string.h >
+#include <stdlib.h>
+#include <string.h>
 /**
  * _calloc - allocates memory for an array
  * @nmemb : a pointer to string 1
