@@ -3,7 +3,7 @@
 /**
  * malloc_checked - assigns memory to an intger
  * @b : unsigned integer
- * Return: no return
+ * Return: pointer to a memory
  */
 void *malloc_checked(unsigned int b)
 {
