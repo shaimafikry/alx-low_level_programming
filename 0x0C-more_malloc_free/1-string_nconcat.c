@@ -13,14 +13,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *s3;
 	int count = 0, i = 0, m = 0;
 	unsigned int t = 0;
-	
-	s3 = malloc((strlen(s1) + strlen(s2))+2);
+
+	s3 = malloc((strlen(s1) + strlen(s2)) + 2);
 	if (n >= strlen(s2))
 	{
 		count = (strlen(s1) + strlen(s2) + 1);
 		for (i = 0; i < count; i++)
 		{
-			if ( s1[m] == '\0')
+			if (s1[m] == '\0')
 			{
 				s3[i] = s2[t];
 				t++;
@@ -37,7 +37,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		count = (strlen(s1) + n + 1);
 		for (i = 0; i < count; i++)
 		{
-			if ( s1[m] == '\0')
+			if (s1[m] == '\0')
 			{
 				while (t < n)
 				{
@@ -46,7 +46,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 					i++;
 				}
 			}
-                        else
+			else
 			{
 				s3[i] = s1[m];
 				m++;
