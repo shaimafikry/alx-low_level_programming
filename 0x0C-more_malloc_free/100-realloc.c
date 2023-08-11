@@ -6,7 +6,7 @@
  * @ptr : a pointer to  memory previously allocated 
  * @old_size : integer 
  * @new_size : integer
- * Return: return a new pointer to s1
+ * Return: return a new pointer 
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
