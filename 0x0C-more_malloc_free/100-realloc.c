@@ -1,9 +1,31 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 /**
- * string_nconcat - concatenates two strings
- * @s1 : a pointer to string 1
- * @s2 : a pointer to string 2
- * @n : number of bytes to concat
+ * _realloc - reallocate memorey
+ * @ptr : a pointer to  memory previously allocated 
+ * @old_size : integer 
+ * @new_size : integer
  * Return: return a new pointer to s1
  */
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+{
+	if (new_size == old_size)
+		return (ptr);
+	if (new_size == 0 && ptr != NULL)
+		return (NULL);
+	if (new_size > old_size)
+	{
+		if (ptr == NULL)
+		{
+			ptr = malloc(new_size);
+			return (ptr);
+		}
+		else
+		{
+		free(ptr);
+		ptr = malloc(new_size);
+		return (ptr);
+		}
+	}
+}
