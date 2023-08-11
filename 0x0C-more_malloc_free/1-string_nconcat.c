@@ -15,8 +15,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int i = 0,m = 0;
 	unsigned int t = 0;
 	int count2 = 0;
-
-	s3 = malloc(sizeof(s1) + sizeof(s2) + 1);
+	
+	s3 = malloc((sizeof(s1) + sizeof(s2))*2);
 	count =  strlen(s1) + strlen(s2);
 	count2 =  strlen(s1) + n;
 	if (n >= strlen(s2))
