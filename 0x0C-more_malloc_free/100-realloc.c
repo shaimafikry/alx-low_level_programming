@@ -3,10 +3,10 @@
 #include <stdlib.h>
 /**
  * _realloc - reallocate memorey
- * @ptr : a pointer to  memory previously allocated 
- * @old_size : integer 
+ * @ptr : a pointer to  memory previously allocated
+ * @old_size : integer
  * @new_size : integer
- * Return: return a new pointer 
+ * Return: return a new pointer
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
