@@ -19,7 +19,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	else if (mem == NULL)
 		return (NULL);
-	mem = 0;
 	else
+	{
+		mem = 0;
 		return (mem);
+	}
 }
