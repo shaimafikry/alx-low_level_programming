@@ -8,7 +8,8 @@
  */
 int main (void)
 {
-	unsigned long int mul = 0, num1, num2;
+	unsigned long int num1, num2;
+	unsigned long int mul = 0;
 
 	mul = num1 * num2;
 	printf("%lu",mul);
