@@ -22,7 +22,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	mem = malloc(nmemb * size);
 	if (mem == NULL)
 		return (NULL);
-	while (num < (nmemb))
+	while (num < (nmemb * size))
 	{
 		mem[num] = 0;
 		num++;
