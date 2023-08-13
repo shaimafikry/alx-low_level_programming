@@ -1,9 +1,16 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * string_nconcat - concatenates two strings
- * @s1 : a pointer to string 1
- * @s2 : a pointer to string 2
- * @n : number of bytes to concat
- * Return: return a new pointer to s1
+ * main - Entry
+ * multiple two numbers
+ * Return: return 0 success
  */
+int main (void)
+{
+	unsigned long int mul = 0, num1, num2;
+
+	mul = num1 * num2;
+	printf("%lu",mul);
+	
+	return (0);
+}
