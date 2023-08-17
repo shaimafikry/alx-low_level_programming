@@ -19,9 +19,10 @@ count++;
 i++;
 }
 i = 0;
-while(src[i] != '\0')
+while (src[i] != '\0')
 {
-dest[count + 1] = src[i];
+count++;
+dest[count] = src[i];
 }
 return (dest);
 }
