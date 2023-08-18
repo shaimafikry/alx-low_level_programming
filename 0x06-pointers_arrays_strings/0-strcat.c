@@ -14,13 +14,11 @@ int count;
 
 count = 0;
 i = 0;
-while (dest[i] != '\0')
+for(i = 0; (dest[i] != '\0'; i++)
 {
 count++;
-i++;
 }
 i = 0;
-count++;
 while (src[i] != '\0')
 {
 dest[count] = src[i];
