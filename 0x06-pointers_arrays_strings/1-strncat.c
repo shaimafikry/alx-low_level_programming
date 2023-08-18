@@ -18,7 +18,9 @@ i = 0;
 while (dest[i] != '\0')
 {
 count++;
+i++;
 }
+i = 0;
 if (n > 0)
 {
 while (i < n)
