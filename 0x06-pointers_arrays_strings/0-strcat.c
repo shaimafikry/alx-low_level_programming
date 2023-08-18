@@ -23,6 +23,7 @@ while (src[i] != '\0')
 {
 count++;
 dest[count] = src[i];
+i++;
 }
 return (dest);
 }
