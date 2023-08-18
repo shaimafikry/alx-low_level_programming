@@ -1,4 +1,3 @@
-
 #include "main.h"
 
 /**
@@ -19,11 +18,12 @@ count++;
 i++;
 }
 i = 0;
+count++;
 while (src[i] != '\0')
 {
-count++;
 dest[count] = src[i];
 i++;
+count++;
 }
 return (dest);
 }
