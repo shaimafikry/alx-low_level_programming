@@ -20,7 +20,6 @@ for (i = 0; dest[i] != '\0'; i++)
 count++;
 }
 i = 0;
-count--;
 if (n > 0)
 {
 while (i < n)
