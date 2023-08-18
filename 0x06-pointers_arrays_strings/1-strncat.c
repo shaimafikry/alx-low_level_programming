@@ -15,12 +15,12 @@ int count;
 
 count = 0;
 i = 0;
-while (dest[i] != '\0')
+for (i = 0; dest[i] != '\0'; i++;)
 {
 count++;
-i++;
 }
 i = 0;
+count--;
 if (n > 0)
 {
 while (i < n)
