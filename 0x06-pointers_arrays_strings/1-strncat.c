@@ -19,6 +19,8 @@ for (i = 0; dest[i] != '\0'; i++)
 {
 count++;
 }
+if (src[i] == '\0')
+return (-1);
 i = 0;
 if (n > 0)
 {
