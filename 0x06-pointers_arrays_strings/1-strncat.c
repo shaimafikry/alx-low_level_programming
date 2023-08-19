@@ -20,7 +20,7 @@ for (i = 0; dest[i] != '\0'; i++)
 count++;
 }
 if (src[i] == '\0')
-return (-1);
+return (NULL);
 i = 0;
 if (n > 0)
 {
