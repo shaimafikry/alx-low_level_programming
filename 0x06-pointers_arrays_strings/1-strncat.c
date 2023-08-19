@@ -20,14 +20,14 @@ for (i = 0; dest[i] != '\0'; i++)
 {
 count++;
 }
-for (i = 0; src[i] != '\0'; i++)
+while (src[i] != '\0')
 {
 count2++;
 }
 i = 0;
 if (n > count2)
 {
-while (i < count2)
+while (i <= count2)
 {
 dest[count] = src[i];
 i++;
