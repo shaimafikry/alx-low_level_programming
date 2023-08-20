@@ -10,7 +10,6 @@
 int main(int argc, char **argv)
 {
 	int mul;
-	int a1, a2;
 	int i;
 
 	mul = 1;
