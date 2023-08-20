@@ -6,7 +6,7 @@
  * @argv: array
  * Return: 0 always success
  */
-int main(int argc, char *argv)
+int main(int argc, char **argv)
 {
 	int mul;
 	int a1, a2;
