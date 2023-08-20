@@ -6,15 +6,18 @@
  * @argv: array
  * Return: 0 always success
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 	int m;
 
-	for ( i = 0; i < argc; i++)
+	for (i = 0; i < argc; i++)
 	{
-		for (m = 0; argv[i][m] != '\0'; m++)
+		while (argv[i][m] != '\0')
+		{
 			_putchar(argv[i][m]);
+			m++;
+		}
 		_putchar('\0');
 	}
 	return (0);
