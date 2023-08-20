@@ -9,16 +9,10 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int m;
 
 	for (i = 0; i < argc; i++)
 	{
-		while (argv[i][m] != '\0')
-		{
-			_putchar(argv[i][m]);
-			m++;
-		}
-  	_putchar('\n');
+		printf("%s\n",argv[i]);
 	}
 	_putchar('\n');
 	return (0);
