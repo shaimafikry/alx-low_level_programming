@@ -12,13 +12,16 @@ int main(int argc, char **argv)
 	int i, num, m;
 	int arr[5] = {1,2,5,10,25};
 
-	num = atoi(argv[1]);
-	if (argc == 2)
-	{
+if (argc < 2 || argc > 2)
+{
+printf("Error\n");
+		return (1);
+}
 	if (argv[1][0] == '-')
 		printf("0\n");
 	else
 	{
+num = atoi(argv[1]);
 		for (i = 0; i < 5; i++)
 		{
 			if (num % arr[i] == 0)
@@ -27,17 +30,11 @@ int main(int argc, char **argv)
 			{
 				for (m = 0; m < 5; m++)
 				{
-					if (num % arr[i] ==arr[m])
+					if (num % arr[i] == arr[m])
 						printf("%d\n", (num / arr[i]) + 1);
 				}
 			}
 		}
 	}
-}
-else
-{
-printf("Error\n");
-		return (1);
-}
 return (0);
 }
