@@ -19,8 +19,10 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		a1 = (argv[0] - 48)
-		a2 = (argv[1] - 48);
+		if ( argv[0] > '9')
+			a1 = atoi(argv[0]);
+		if (argv[1] > 9)
+			a2 = atoi(argv[1]);
 		mul = a1 * a2;
 		printf("%d\n", mul);
 	}
