@@ -6,11 +6,10 @@
  * @argv: array
  * Return: 0 always success
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv)
 {
 	int mul;
-	int i;
-	int arr[2];
+	int a1, a2;
 
 	if (argc < 2)
 	{
@@ -19,11 +18,9 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-	for ( i = 0; i < argc; i++)
-	{
-		arr[i] = argv[i] - '0';
-	}
-		mul = arr[0] * arr[1];
+		a1 = argv[0] - '0';
+		a2 = argv[1] - '0';
+		mul = a1 * a2;
 		printf("%d\n", mul);
 	}
 	return (0);
