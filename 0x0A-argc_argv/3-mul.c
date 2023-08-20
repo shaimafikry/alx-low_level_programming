@@ -6,9 +6,8 @@
  * @argv: array
  * Return: 0 always success
  */
-int main(int argc, char *argv[])
+int main(int argc, int *argv[])
 {
-	int i;
 	int mul;
 
 	if (argc < 2)
