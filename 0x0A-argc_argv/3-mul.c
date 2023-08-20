@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 /**
  * main - entry point
  * @argc: number of argument
@@ -18,8 +18,8 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		a1 = argv[0] - '0';
-		a2 = argv[1] - '0';
+		a1 = atoi(argv[0]);
+		a2 = atoi(argv[1]);
 		mul = a1 * a2;
 		printf("%d\n", mul);
 	}
