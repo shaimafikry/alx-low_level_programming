@@ -13,12 +13,9 @@ int main(int argc, char **argv)
 	int arr[5] = {1,2,5,10,25};
 
 	num = atoi(argv[1]);
-	if (argc > 1)
+	if (argc == 1)
 	{
-		printf("Error\n");
-		return (1);
-	}
-	if (num < 0)
+	if (argv[1][0] == '-')
 		printf("0\n");
 	else
 	{
@@ -36,7 +33,11 @@ int main(int argc, char **argv)
 			}
 		}
 	}
-	
-	
-	return (0);
+}
+else
+{
+printf("Error\n");
+		return (1);
+}
+return (0);
 }
