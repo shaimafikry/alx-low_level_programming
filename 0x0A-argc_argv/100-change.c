@@ -29,13 +29,17 @@ num = atoi(argv[1]);
 				printf("%d\n", (num / arr[i]));
 break;
 }
-if ( num % arr[i] != 0)
+if (num % arr[i] != 0)
 {
 				for (m = 0; m < 5; m++)
 				{
 					if (num % arr[i] == arr[m])
 						printf("%d\n", (num / arr[i]) + 1);
 				}
+else
+{
+
+}
 			}
 		}
 	}
