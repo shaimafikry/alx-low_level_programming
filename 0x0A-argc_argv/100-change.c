@@ -17,7 +17,7 @@ if (argc < 2 || argc > 2)
 printf("Error\n");
 		return (1);
 }
-	if (argv[1][0] == '-' || argv[1] == '0')
+	if (argv[1][0] == '-' || argv[1][0] == '0')
 		printf("0\n");
 	else
 	{
