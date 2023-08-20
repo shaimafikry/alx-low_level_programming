@@ -19,8 +19,8 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		a1 = (argv[0] - '0')
-		a2 = (argv[1] - '0');
+		a1 = (argv[0] - 48)
+		a2 = (argv[1] - 48);
 		mul = a1 * a2;
 		printf("%d\n", mul);
 	}
