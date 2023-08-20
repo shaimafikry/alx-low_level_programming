@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			for (m = 0; argv[i][m] != '\0' m++)
+			for (m = 0; argv[i][m] != '\0'; m++)
 			{
 				if (atoi(argv[i][m]) < '0' && atoi(argv[i][m]) > '9')
 				{
