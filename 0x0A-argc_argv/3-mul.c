@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	{
 		if ( argv[0] > '9')
 			a1 = atoi(argv[0]);
-		if (argv[1] > 9)
+		if (argv[1] > '9')
 			a2 = atoi(argv[1]);
 		mul = a1 * a2;
 		printf("%d\n", mul);
