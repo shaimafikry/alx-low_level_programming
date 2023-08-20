@@ -9,8 +9,8 @@
  */
 int main(int argc, char **argv)
 {
-	int coin, i, num, m;
-	int arr[5] = [1,2,5,10,25];
+	int i, num, m;
+	int arr[5] = {1,2,5,10,25};
 
 	num = atoi(argv[1]);
 	if (argc != '1')
