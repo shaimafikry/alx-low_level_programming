@@ -9,7 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-	int mul, i;
+	int mul, i, m;
 
 	mul = 0;
 	if (argc < 1)
@@ -21,12 +21,15 @@ int main(int argc, char **argv)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]) < '0' && atoi(argv[i]) > '9')
+			for (m = 0; arg[i][m] != '\0' m++)
 			{
-				printf("Error");
-				printf("\n");
-				return (1);
-			}	
+				if (atoi(argv[i][m]) < '0' && atoi(argv[i][m]) > '9')
+				{
+					printf("Error");
+					printf("\n");
+					return (1);
+				}
+			}
 		mul += atoi(argv[i]);
 		}
 	}
