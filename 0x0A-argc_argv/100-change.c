@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 	int arr[5] = {1,2,5,10,25};
 
 	num = atoi(argv[1]);
-	if (argc != '1')
+	if (argc != 1)
 	{
 		printf("Error\n");
 		return (1);
