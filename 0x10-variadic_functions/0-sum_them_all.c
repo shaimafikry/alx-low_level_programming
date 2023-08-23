@@ -1,4 +1,4 @@
-#include "main.h"
+#include "variadic_functions.h"
 /**
 * sum_them_all - sum all numbers
 * @n: unsigned integer
