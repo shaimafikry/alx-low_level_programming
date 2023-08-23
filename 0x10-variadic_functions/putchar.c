@@ -1,8 +1,8 @@
 #include "variadic_functions.h"
 /** 
-  * _putchar - prints a character 
-  * @c: character 
-  * Return: 1 
+  * _putchar - prints a character
+  * @c: character
+  * Return:no return
   */ 
  void _putchar(char c) 
  {
