@@ -2,7 +2,7 @@
 /**
 * sum_them_all - sum all numbers
 * @n: unsigned integer
-* Return: sum;
+* Return: sum
 */
 int sum_them_all(const unsigned int n, ...)
 {
