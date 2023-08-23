@@ -2,9 +2,10 @@
 /** 
   * _putchar - prints a character
   * @c: character
-  * Return:no return
+  * Return: return 0
   */ 
- void _putchar(char c) 
+ char _putchar(char c) 
  {
 write(1, &c, 1);
+return (0);
  }
