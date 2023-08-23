@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
- * Function decleration
+ * Header file for funcrions
  */
 void _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
