@@ -6,7 +6,7 @@
 */
 int sum_them_all(const unsigned int n, ...)
 {
-	usigned int sum;
+	unsigned int sum;
 	int i;
 
 	sum = 0;
