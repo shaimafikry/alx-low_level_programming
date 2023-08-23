@@ -1,24 +1,13 @@
- #include "main.h"
+#include "main.h"
+#include <stdio.h>
 /**
-* @format : pointer to format
-* @arg : 
-* Return : count
-* /
-* 
-int main (argc ,*argv)
+ * main - entry point
+ * @argc: number of argument
+ * @argv: array
+ * Return: 0 always success
+ */
+int main(int argc, char *argv[] __attribute__((unused)))
 {
- int i;
-for ( i = 0; i < argc; i++)
-{
-for (m =0; argv[i][m] != '\0'; m++)
-  _putchar(argv[i][m]);
+	printf("%d\n", argc - 1);
+	return (0);
 }
-
-
-
-
-return (0);
-
-
-}
-
