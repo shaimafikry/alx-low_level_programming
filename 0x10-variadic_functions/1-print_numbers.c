@@ -19,5 +19,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%s",seprator);
 	}
 	va_end(num);
-	_putchar('\n'):
+	_putchar('\n');
 }
