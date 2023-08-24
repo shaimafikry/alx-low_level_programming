@@ -19,10 +19,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		printf("%s",va_arg(str, char*));
 		if (separator != NULL)
 		{
-			if (i != n-1)
+			if (i != n)
+			{
 				printf("%s", separator);
+				_putchar('\n');
+			}
 		}
 	}
 	va_end(str);
-	_putchar('\n');
 }
