@@ -18,8 +18,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("nil");
 		printf("%s",va_arg(str, char*));
 		if (separator != NULL)
-			printf("%s", separator);
+		{
+			if (i != n-1)
+				printf("%s", separator);
+		}
 	}
-	_putchar('\n');
 	va_end(str);
+	_putchar('\n');
 }
