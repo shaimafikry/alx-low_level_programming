@@ -1,23 +1,25 @@
 #include "variadic_functions.h"
+#include <stdio.h>
 /**
-* sum_them_all - sum all numbers
+* print_all - print all input depends on speceifier
+* @separator: string to be printed between nmbers
 * @n: unsigned integer
-* Return: sum
+* Return: nothing
 */
-int sum_them_all(const unsigned int n, ...)
+void print_all(const char * const format, ...)
 {
-	usigned int sum;
-	int i;
+	unsigned int i;
+	va_list str;
 
-	sum = 0;
-	va_list num;
-	va_start(num , n);
-	if (n == 0)
-		return (0):
+	va_start(str, n);
 	for (i = 0; i < n; i++)
 	{
-		sum += va_arg(num, int);
+		if (va_arg(str, char*) == NULL)
+			printf("nil");
+		printf("%s",va_arg(str, char*);
+		if (separator != NULL)
+			printf("%s",seprator);
 	}
 	va_end(num);
-	return (sum);
+	_putchar('\n'):
 }
