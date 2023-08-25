@@ -9,19 +9,18 @@ int is_palindrome(char *s)
 	if (*s == 0)
 		return (1);
 	else
-		return (check_str(*s));
+		return (check_str(s));
 }
 /**
   * check_str - cheks a if a string is palindrom
   * @s: string
   * Return:  return 1 true 0 false
   */
-
-int check_str( char *s)
+int check_str(char *s)
 {
 int i, m;
 
-m = 0
+m = 0;
 i = 0;
 while (s[i] != '\0')
 {
