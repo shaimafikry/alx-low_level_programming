@@ -14,3 +14,4 @@
  int is_palindrome(char *s);
  char _putchar(char c);
 int is_prime(unsigned int n, unsigned int i);
+int check_str( char *s);
