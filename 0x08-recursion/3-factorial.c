@@ -1,7 +1,7 @@
 #include "main.h"
 /**
   * factorial - calculate a string length
-  * @n: string
+  * @n: integer
   * Return: factorial of a number
   */
 int factorial(int n)
