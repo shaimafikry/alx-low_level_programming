@@ -9,7 +9,8 @@
  */
 int main(int argc, char **argv)
 {
-	int i, num, m, count, chan;
+	int i, m, count, chan;
+	unsigned int num;
 	int arr[5] = {25,10,5,2,1};
 
 	if (argc < 2 || argc > 2)
