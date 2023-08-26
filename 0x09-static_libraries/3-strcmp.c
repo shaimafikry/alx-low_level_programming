@@ -7,3 +7,6 @@
  * @src  : a pointer to char
  * Return: return pointer to dest
  */
+int _strcmp(char *s1, char *s2)
+{
+}
