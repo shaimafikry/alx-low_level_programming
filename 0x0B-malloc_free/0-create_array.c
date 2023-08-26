@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 /**
   * create_array - prints a if a string is palindrom
   * @c: character
@@ -9,15 +9,19 @@
 char *create_array(unsigned int size, char c)
 {
 	char *arr;
-	int i;
+	unsigned int i;
 
+	i = 0;
 	if (size == 0)
 		return (NULL);
 	arr = malloc(sizeof(char) * size);
-	if ( arr != NULL)
+	if (arr != NULL)
 	{
-	for (i = 0; arr[size] != '\0'; i++)
+	while (i < size)
+	{
 		arr[i] = c;
+		i++;
+	}
 	return (arr);
 	}
 	else
