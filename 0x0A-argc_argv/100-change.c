@@ -36,8 +36,9 @@ int main(int argc, char **argv)
 				printf("%d\n", count);
 				return (0);
 			}
+			if (chan > num)
 				chan -= arr[m];
-				m++;
+			m++;
 		}
 	}
 	printf("%d\n", count);
