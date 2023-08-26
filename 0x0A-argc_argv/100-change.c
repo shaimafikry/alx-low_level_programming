@@ -9,39 +9,32 @@
  */
 int main(int argc, char **argv)
 {
-	int i, num, m;
+	int i, num, m, count;
 	int arr[5] = {25,10,5,2,1};
 
-if (argc < 2 || argc > 2)
-{
-printf("Error\n");
-		return (1);
-}
-	if (argv[1][0] == '-' || argv[1][0] == '0')
-		printf("0\n");
-	else
+	if (argc < 2 || argc > 2)
 	{
-num = atoi(argv[1]);
-		for (i = 0; i < 5; i++)
+		printf("Error\n");
+		return (1);
+	}
+	if (argv[1][0] == '-' || argv[1][0] == '0')
+	{
+		printf("0\n");
+		return (0);
+	}
+	m = 0;
+	count = 1;
+	num = atoi(argv[1]);
+	for (i = 0; i < 5; i++)
+	{
+		while ( m < 5)
 		{
-			if (num % arr[i] == 0)
-{
-				printf("%d\n", (num / arr[i]));
-break;
-}
-if (num % arr[i] != 0)
-{
-				for (m = 0; m < 5; m++)
-				{
-					if (num % arr[i] == arr[m])
-						printf("%d\n", (num / arr[i]) + 1);
-				}
-else
-{
-
-}
-			}
+		if (arr[i] + arr[m] == num)
+			count++;
+		else
+			m++;
 		}
 	}
+	printf("%d\n", count);
 return (0);
 }
