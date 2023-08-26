@@ -9,7 +9,7 @@
 int main(int argc, char **argv)
 {
 	int i, m;
-	unsigned int num , count, chan;
+	unsigned int num, count, chan;
 	int arr[5] = {25, 10, 5, 2, 1};
 
 	if (argc < 2 || argc > 2)
@@ -37,9 +37,9 @@ int main(int argc, char **argv)
 	for (i = 0; i < 5; i++)
 	{
 		chan = arr[i];
-		while ( m < 5)
+		while (m < 5)
 		{
-			chan += arr[m] ;
+			chan += arr[m];
 			count++;
 			if (chan == num)
 			{
