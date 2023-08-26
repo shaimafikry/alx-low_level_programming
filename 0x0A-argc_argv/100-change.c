@@ -33,13 +33,11 @@ int main(int argc, char **argv)
 			count++;
 			if (chan == num)
 			{
-				break;
+				printf("%d\n", count);
+				return (0);
 			}
-			else
-			{
 				chan -= arr[m];
 				m++;
-			}
 		}
 	}
 	printf("%d\n", count);
