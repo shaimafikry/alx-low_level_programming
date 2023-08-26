@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -6,6 +7,3 @@
  * @src  : a pointer to char
  * Return: return pointer to dest
  */
-
-*_strcat(char *dest, char *src)
-
