@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 /**
   * create_array - prints a if a string is palindrom
   * @c: character
