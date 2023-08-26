@@ -26,21 +26,23 @@ int main(int argc, char **argv)
 	num = atoi(argv[1]);
 	for (i = 0; i < 5; i++)
 	{
-		chan = arr[i];
-		while ( m < 5)
-		{
-			chan += arr[m] ;
-			count++;
-			if (chan == num)
-			{
-				printf("%d\n", count);
-				return (0);
-			}
-			if (chan > num)
-				chan -= arr[m];
-			m++;
-		}
-	}
-	printf("%d\n", count);
-	return (0);
+		chan += arr[m] ;
+            count++;
+            if (chan == num)
+            {
+                printf("%d\n", count);
+                return (0);
+            }
+            if (chan > num)
+            {
+                chan -= arr[m];
+                count--;
+            }
+            else
+              m--;
+            m++;
+        }
+    }
+    printf("%d\n", count);
+    return (0);
 }
