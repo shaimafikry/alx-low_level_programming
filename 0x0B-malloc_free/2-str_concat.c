@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 		s1 = "";
 	if (s1 == NULL && s2 == NULL)
 	{
-		return "";
+		return ("");
 	}
 	for (i = 0; s1[i] != '\0'; i++)
 		count++;
@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; i < count; i++)
 	{
 		if (s1[i] == '\0')
-			while ( i < count)
+			while (i < count)
 			{
 				arr[i] = s2[m];
 				i++;
