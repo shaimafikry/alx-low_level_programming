@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 /**
-  * _strdup - prints a copy string 
-  * @s: pointer to dtring
+  * _strdup - prints a copy string
+  * @str: pointer to dtring
   * Return:  a pointer to the copied string , or NULL if it fails
  */
 char *_strdup(char *str)
@@ -18,7 +18,6 @@ char *_strdup(char *str)
 	{
 		count++;
 	}
-		
 	ptr = malloc(sizeof(char) * count + 1);
 	i = 0;
 	if (ptr != NULL)
