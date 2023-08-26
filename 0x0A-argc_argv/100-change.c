@@ -9,7 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-	int i, num, m, count;
+	int i, num, m, count, chan;
 	int arr[5] = {25,10,5,2,1};
 
 	if (argc < 2 || argc > 2)
@@ -22,19 +22,26 @@ int main(int argc, char **argv)
 		printf("0\n");
 		return (0);
 	}
-	m = 0;
-	count = 1;
+	m = 0, count = 1;
 	num = atoi(argv[1]);
 	for (i = 0; i < 5; i++)
 	{
+		chan = arr[i];
 		while ( m < 5)
 		{
-		if (arr[i] + arr[m] == num)
+			chan += arr[m] ;
 			count++;
-		else
-			m++;
+			if (chan == num)
+			{
+				break;
+			}
+			else
+			{
+				chan -= arr[m];
+				m++;
+			}
 		}
 	}
 	printf("%d\n", count);
-return (0);
+	return (0);
 }
