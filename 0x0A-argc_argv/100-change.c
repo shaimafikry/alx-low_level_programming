@@ -22,11 +22,24 @@ int main(int argc, char **argv)
 		printf("0\n");
 		return (0);
 	}
-	m = 0, count = 1;
-	num = atoi(argv[1]);
-	for (i = 0; i < 5; i++)
-	{
-		chan += arr[m] ;
+	if (argc < 2 || argc > 2)
+    {
+        printf("Error\n");
+        return (1);
+    }
+    if (argv[1][0] == '-' || argv[1][0] == '0')
+    {
+        printf("0\n");
+        return (0);
+    }
+    m = 0, count = 1;
+    num = atoi(argv[1]);
+    for (i = 0; i < 5; i++)
+    {
+        chan = arr[i];
+        while ( m < 5)
+        {
+            chan += arr[m] ;
             count++;
             if (chan == num)
             {
