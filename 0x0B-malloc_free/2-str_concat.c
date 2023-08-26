@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
-  * _strdup - prints a copy string
+  * str_concat - prints a two string in one
   * @s1: pointer to string
   * @s2: pointer to string
   * Return:  a pointer to the string with 2 string , or NULL if it fails
