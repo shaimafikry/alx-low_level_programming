@@ -6,7 +6,7 @@
  * multiple two numbers
  * Return: return 0 success
  */
-int main (argc, *argv)
+int main (int argc, char *argv)
 {
 	
 	unsigned  int mul = 0;
