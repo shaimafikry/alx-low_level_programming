@@ -6,12 +6,12 @@
  * multiple two numbers
  * Return: return 0 success
  */
-int main (void)
+int main (argc, *argv)
 {
-	unsigned  int num1, num2;
+	
 	unsigned  int mul = 0;
 
-	mul = num1 * num2;
+	mul = atoi(argv[1]) * atoi(argv[2]);
 	printf("%u",mul);
 	
 	return (0);
