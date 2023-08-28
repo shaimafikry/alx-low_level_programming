@@ -7,10 +7,6 @@
 * Return: return pointer to string that has all arguments
 */
 char *argstostr(int ac, char **av)
-#include <stdlib.h>
-#include <string.h>
-
-char *argstostr(int ac, char **av)
 {
 	int i, j;
 	int len = 0;
