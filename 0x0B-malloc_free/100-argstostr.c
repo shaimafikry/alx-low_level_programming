@@ -29,7 +29,7 @@ char *argstostr(int ac, char **av)
 	}
 	i = 0;
 	m = 1;
-	while (av[m] != '\0')
+	while (m < count)
 	{
 		str[i] = av[m];
 		i++;
