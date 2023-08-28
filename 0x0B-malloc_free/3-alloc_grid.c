@@ -20,8 +20,8 @@ int **alloc_grid(int width, int height)
 		free(ptr);
 		return (NULL);
 	}
-	for (i = 0; i < width; i++)
-		for (m = 0; m < height; m++)
-			ptr[i][m] = 0;
+	for (i = 0; *ptr != 0; *ptr++)
+		for (m = 0; **ptr != 0; **ptr++)
+			**ptr = 0;
 	return (ptr);
 }
