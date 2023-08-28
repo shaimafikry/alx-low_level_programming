@@ -1,5 +1,25 @@
 #include "main.h"
+#include <stdlib.h>
 /**
-  * _print_rev_recursion - prints a if a string is palindrom
-  * @s: string
-  * Return:  return 1 true 0 false
+  * alloc_grid - allocate memory for 2 dimential array
+  * @width: integer
+  * @height: integer
+  * Return:  return null in failure , pointer to memory in sucess
+ */
+
+int **alloc_grid(int width, int height)
+{
+	int i, m;
+	*ptr;
+
+	if (width <= 0 || height <= 0)
+		return (NULL);
+	ptr = malloc(sizeof(int) * (width * height) +1);
+	if (ptr == NULL)
+		return (NULL);
+	for (i = 0; i < width; i++)
+		for ( m = 0; m < height; m++)
+			ptr[i][m] = 0;
+	return (ptr);
+	
+}
