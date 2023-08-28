@@ -3,17 +3,18 @@
 /**
 * free_grid
 * @grid: pointer to be freed
-* @heaight pointer length
+* @height pointer length
 * Return: no return
 */
 void free_grid(int **grid, int height)
 {
-	int i;
+	int i, m;
 
-	i = 0;
-	while ( i != height)
-	{
-		free(grid[i]);
-		i++;
-	}
+	m = 0;
+	for (i = 0; i < height; i++)
+		while (grid[i][m] != '\0')
+		{
+			free(grid[i][m]);
+			m++;
+		}
 }
