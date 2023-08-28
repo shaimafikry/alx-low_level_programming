@@ -7,36 +7,37 @@
 * Return: return pointer to string that has all arguments
 */
 char *argstostr(int ac, char **av)
+#include <stdlib.h>
+#include <string.h>
+
+char *argstostr(int ac, char **av)
 {
-	int i, m, h;
-	char **str;
-	int count = ac -1;
+	int i, j;
+	int len = 0;
+	char *str;
 
-	if ( ac == 0 || av == NULL)
+	if (ac <= 0 || av == NULL)
 		return (NULL);
 
- 	str = malloc(sizeof(char *) * (count + (ac - 2)));
+	for (i = 0; i < ac; i++)
+	{
+		for (j = 0; av[i][j] != '\0'; j++)
+			len ++;
+		len++;
+	}
+	str = malloc(sizeof(char) * len);
 	if (str == NULL)
-	{
-		free (str);
 		return (NULL);
-	}
-	m = 1;
-	for (i = 0; i < count; i++)
+	len = 0;
+    	for (i = 0; i < ac; i++)
 	{
-		str[i] = malloc (sizeof(av[m])) ;
-		m++;
+		for (j = 0; av[i][j]; j++) {
+			str[len++] = av[i][j];
+		}
+		str[len++] = '\n';
 	}
-	i = 0;
-	m = 1;
-	while (m < count)
-	{
-		for (h = 0; av[m][h] != '\0'; h++)
-			str[i][h] = av[m][h];
-		i++;
-		str[i][0] = '\n';
-		i++;
-		m++;	
-	}
-	return (*str);
+
+    	str[len] = '\0';
+
+    return (str);
 }
