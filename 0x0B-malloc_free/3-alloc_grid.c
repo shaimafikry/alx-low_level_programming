@@ -23,5 +23,5 @@ int **alloc_grid(int width, int height)
 	for (i = 0; i < width; i++)
 		for (m = 0; m < height; m++)
 			ptr[i][m] = 0;
-	return (*ptr);
+	return (**ptr);
 }
