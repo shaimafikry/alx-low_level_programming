@@ -37,5 +37,5 @@ char *argstostr(int ac, char **av)
 		i++;
 		m++;	
 	}
-	return (**str);
+	return (str);
 }
