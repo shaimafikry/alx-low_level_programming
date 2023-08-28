@@ -9,7 +9,7 @@
 char *argstostr(int ac, char **av)
 {
 	int i, m;
-	int **str;
+	char **str;
 	int count = ac -1;
 
 	if ( ac == 0 || av == NULL)
@@ -37,5 +37,5 @@ char *argstostr(int ac, char **av)
 		i++;
 		m++;	
 	}
-	return (str);
+	return (*str);
 }
