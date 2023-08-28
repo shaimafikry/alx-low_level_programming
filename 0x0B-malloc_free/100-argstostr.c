@@ -5,6 +5,7 @@
 * @ac: integer
 * @av: pointer string
 * Return: return pointer to string that has all arguments
+*/
 char *argstostr(int ac, char **av)
 {
 	int i, m;
@@ -24,13 +25,6 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < count; i++)
 	{
 		str[i] = malloc (sizeof(av[m])) ;
-		if (str[i] == NULL)
-		{
-			for (m = 0; m < i; i++)
-				free(str[m]);
-			free(str);
-			return (NULL);
-		}
 		m++;
 	}
 	i = 0;
