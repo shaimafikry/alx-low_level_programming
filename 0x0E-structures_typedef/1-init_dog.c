@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 /**
 * init_dog - func to iniate struct
 * @struct dog d: child of a struct
