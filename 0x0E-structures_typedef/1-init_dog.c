@@ -32,7 +32,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 		d->name[i] = name[i];
 		i++;
 	}
-	d->name[len] = '\0';
+	d->name[len1] = '\0';
 	d->age = age;
 	i = 0;
 	while ( owner[i] != '\0')
