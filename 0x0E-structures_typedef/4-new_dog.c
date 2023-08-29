@@ -2,8 +2,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
-* print_dog - func to print struct
-* @d: child of a struct
+* dog_t *new_dog - func to create a child struct
+* @name: string
+* @age: float
+* @owner: string
+* Return: pointer to a new struct
 */
 dog_t *new_dog(char *name, float age, char *owner);
 {
