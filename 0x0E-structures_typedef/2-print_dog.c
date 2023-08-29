@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
-* init_dog - func to iniate struct
+* print_dog - func to print struct
 * @d: child of a struct
 */
 void print_dog(struct dog *d)
@@ -14,6 +14,8 @@ void print_dog(struct dog *d)
 		else
 			printf("Name: (nil)\n");
 		if (d->age)
+			printf("Age: %f\n", d->age);
+		else
 			printf("Age: %f\n", d->age);
 		if (d->owner)
 			printf("Owner: %s\n", d->owner);
