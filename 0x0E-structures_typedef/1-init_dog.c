@@ -2,10 +2,10 @@
 #include <stdlib.h>
 /**
 * init_dog - func to iniate struct
-* @struct dog d: child of a struct
+* @d: child of a struct
 * @name: charcater
 * @age: float
-* @ owner: character
+* @owner: character
 */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
