@@ -15,5 +15,5 @@ size_t list_len(const list_t *h)
 		count++;
 		curr = curr->next;
 	}
-	return count; //return the total count of nodes in the list
+	return count;
 }
