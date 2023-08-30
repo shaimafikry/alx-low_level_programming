@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-#inlude <stdlib.h>
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * op_add -  add two digits
