@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <string.h>
 /**
  * print_name -  function that prints a name
  * @name: string
@@ -24,7 +25,7 @@ int main (int argc, char **argv)
 		printf("Error\n");
 		exit(99);
 	}
-	calc = get_op_func(op)(num1, num2);
+	calc = get_op_func(argv[2])(num1, num2);
 	printf("%d\n", calc);
 	return (0);
 }
