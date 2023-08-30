@@ -1,4 +1,4 @@
-#include "function_pointers.h"
+#include "calc.h"
 /**
  * get_op_func -  function that select which opr to deal with
  * @s: string
