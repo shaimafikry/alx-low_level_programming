@@ -22,10 +22,24 @@ int op_mul(int a, int b)
  * Return:  result
  */
 int op_div(int a, int b)
+{
+	if ( b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	return (a /b);
+}
 /**
  * op_mod -  a mod b
  * Return: result
  */
 int op_mod(int a, int b)
+{
+	if ( b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	return (a % b);
+}
