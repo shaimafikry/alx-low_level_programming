@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 /**
  * print_name -  function that prints a name
  * @name: string
