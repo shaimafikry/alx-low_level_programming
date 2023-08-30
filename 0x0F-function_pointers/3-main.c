@@ -12,7 +12,7 @@ int main (int argc, char **argv)
 	char op = argv[2][1];
 
 	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3];
+	num2 = atoi(argv[3]);
 
 	if ( argc < 4  || strlen(argv[2]) > 3)
 	{
