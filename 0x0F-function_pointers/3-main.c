@@ -6,7 +6,7 @@
  * 
  * Return: no return
  */
-int main (int argc, **argv)
+int main (int argc, char **argv)
 {
 	int num1, num2, calc;
 	char op = argv[2][1];
