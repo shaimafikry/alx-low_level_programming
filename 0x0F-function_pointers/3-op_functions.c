@@ -1,4 +1,6 @@
 #include "function_pointers.h"
+#inlude <stdlib.h>
+#include <stdio.h>
 /**
  * op_add -  add two digits
  * Return:  return result
@@ -13,7 +15,7 @@ int op_add(int a, int b)
  */
 int op_sub(int a, int b)
 {
-	return (a - b;
+	return (a - b);
 }
 /**
  * op_mul -  mull two digits
@@ -28,7 +30,6 @@ int op_mul(int a, int b)
  * Return:  result
  */
 int op_div(int a, int b)
-{
 {
 	if ( b == 0)
 	{
