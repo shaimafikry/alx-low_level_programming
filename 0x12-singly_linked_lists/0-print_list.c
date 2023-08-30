@@ -9,17 +9,21 @@
 
 size_t print_list(const list_t *h)
 {
-	int count;
+	int count,i ;
 	*h = header;
 
 	count = 0;
-	if ((*h).str == NULL || (*h).len == 0)
-		printf("[0] (nil)");
-
 	while  (next != NULL)
 	{
 		next =  (*h).next;
 		count++;
 	}
+	
+	if ((*h).str == NULL || (*h).len == 0)
+		printf("[0] (nil)");
+	if (i = 0; i < count; i ++)
+		printf("%s", (*h).str);
+
+	
 	return (count);
 }
