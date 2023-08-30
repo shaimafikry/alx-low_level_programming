@@ -9,23 +9,25 @@
  */
 int main (int argc, char **argv)
 {
-	int num1, num2, calc;
+	int (*test)(int, int);
+	int calc, num1, num2;
 	char op = argv[2][1];
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
-/*	if (argc != 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
-	}*/
+	}
 	if (op != '+' || (op != '-' || (op != '/' || (op != '%' || op != '*'))))
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	calc = get_op_func(argv[2])(num1, num2);
+	test = get_op_func(argv[2]);
+	calc = test(num1, num2);
 	printf("%d\n", calc);
 	return (0);
 }
