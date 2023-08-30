@@ -1,6 +1,4 @@
-#include "function_pointers.h"
-#include <stdlib.h>
-#include <stdio.h>
+#include "calc.h"
 /**
  * op_add -  add two digits
  * Return:  return result
