@@ -7,7 +7,7 @@
  * Return: return -1 when fails or no integer found
  *	return integer found when sucess
  */
-int int_index(int *array, int size, int (*cmp)(int));
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i, n;
 
