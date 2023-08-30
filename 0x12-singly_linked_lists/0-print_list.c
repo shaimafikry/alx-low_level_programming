@@ -10,7 +10,7 @@
 size_t print_list(const list_t *h)
 {
 	int count;
-	list_t *h = header;
+	*h = header;
 
 	count = 0;
 	if ((*h).str == NULL || (*h).len == 0)
