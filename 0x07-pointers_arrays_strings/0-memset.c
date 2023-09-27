@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * memset - fills memory with constant byte
+ * _memset - fills memory with constant byte
  * @s: pointer to string
  * @b: character to be filled
  * @n: numbers to be filled
