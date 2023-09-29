@@ -22,6 +22,8 @@ char *_strstr(char *haystack, char *needle)
 			m++;
 		else
 			m = 0;
+		if (m == 1)
+			return (haystack);
 		if (size == m)
 			return (haystack + (i - m + 1));
 		i++;
