@@ -18,12 +18,12 @@ char *_strstr(char *haystack, char *needle)
                 size++;
         while (haystack[i] != '\0')
         {
-            if (haystack[i] == needle[m])
-            {
-                m++;
-            }
+		if (haystack[i] == needle[m])
+			m++;
+		else
+			m = 0;
                 if (size == m)
-                        return (haystack+i);
+                        return (haystack + i);
                 i++;
         }
         return (NULL);
