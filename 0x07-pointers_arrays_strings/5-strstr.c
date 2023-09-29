@@ -5,26 +5,26 @@
  * @haystack: string
  * @needle: dubdtring
  * Return: pointer to the begining of substring
- * 	null if not found
+ *	null if not found
  */
 char *_strstr(char *haystack, char *needle)
 {
-        int m, i, size;
+	int m, i, size;
 
-        i = 0;
-        size = 0;
-        m= 0;
-        for (m = 0; needle[m] != '\0'; m++)
-                size++;
-        while (haystack[i] != '\0')
-        {
+	i = 0;
+	size = 0;
+	m = 0;
+	for (m = 0; needle[m] != '\0'; m++)
+		size++;
+	while (haystack[i] != '\0')
+	{
 		if (haystack[i] == needle[m])
 			m++;
 		else
 			m = 0;
-                if (size == m)
-                        return (haystack + i);
-                i++;
-        }
-        return (NULL);
+		if (size == m)
+			return (haystack + (i - m));
+		i++;
+	}
+	return (NULL);
 }
