@@ -10,6 +10,8 @@
 
 char *_strchr(char *s, char c)
 {
+	if (c  == '\0')
+		return (c);
 	for (; *s; s++)
 	{
 		if (*s == c)
