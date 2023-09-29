@@ -10,8 +10,6 @@
 
 char *_strchr(char *s, char c)
 {
-	int i;
-
 	for (; *s; s++)
 	{
 		if (*s == c)
