@@ -9,7 +9,7 @@ void set_string(char **s, char *to)
 {
 while(**s)
 {
-to = s;
+to = &s;
 s++;
 }
 
