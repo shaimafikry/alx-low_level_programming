@@ -10,8 +10,8 @@ void set_string(char **s, char *to)
 while(**s)
 {
 to = &*s;
-s + 1;
-to + 1;
+s++;
+to++;
 }
 
 }
