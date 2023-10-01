@@ -4,11 +4,12 @@
 * print_diagsums - prints dums of diagonals
 * @a: array of numbers
 * @size: integer
-* Return: no return 
+* Return: no return
 */
 void print_diagsums(int *a, int size)
 {
-	int r , i, l, sr, sl, m, n;
+	int r, i, l, sr, sl, m, n;
+
 	r = size + 1;
 	l = size - 1;
 	sr = 0;
@@ -17,10 +18,10 @@ void print_diagsums(int *a, int size)
 	n = l;
 	for (i = 0; i < size; i++)
 	{
-		sr += a[m] ;
+		sr += a[m];
 		m += r;
 		sl  += a[n];
 		n += l;
 	}
-	printf ("%d, %d\n",sr, sl);
+	printf("%d, %d\n", sr, sl);
 }
