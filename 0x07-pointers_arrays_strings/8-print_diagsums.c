@@ -8,7 +8,7 @@
 */
 void print_diagsums(int *a, int size)
 {
-    int r , l, sr, sl, m, n; 
+    int r , i, l, sr, sl, m, n; 
     r = size +1;
     l = size - 1;
     sr = 0;
