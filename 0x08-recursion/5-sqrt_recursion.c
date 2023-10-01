@@ -12,7 +12,7 @@ int find_sqrt(int n, int i)
 	else
 	{
 		i++;
-		find_sqrt(n, i);
+		return (find_sqrt(n, i));
 	}
 }
 /**
