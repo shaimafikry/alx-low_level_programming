@@ -8,19 +8,19 @@
 */
 void print_diagsums(int *a, int size)
 {
-    int r , i, l, sr, sl, m, n; 
-    r = size +1;
-    l = size - 1;
-    sr = 0;
-    sl = 0;
-    m = 0;
-    n = l;
-    for (i = 0; i < size; i++) 
-    {
-    sr += a[m] ;
-    m += r;
-    sl  += a[n];
-    n += l;         
-    }
-    printf ("%d, %d\n",sr, sl);
+	int r , i, l, sr, sl, m, n;
+	r = size + 1;
+	l = size - 1;
+	sr = 0;
+	sl = 0;
+	m = 0;
+	n = l;
+	for (i = 0; i < size; i++)
+	{
+		sr += a[m] ;
+		m += r;
+		sl  += a[n];
+		n += l;
+	}
+	printf ("%d, %d\n",sr, sl);
 }
