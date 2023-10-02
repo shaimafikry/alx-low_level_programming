@@ -5,7 +5,7 @@
 * @i: integer
 * Return: returns 1 if found 0 if not
 */
-int find_prime (int n, int i)
+int find_prime(int n, int i)
 {
 if (n == i)
 return (1);
@@ -16,7 +16,7 @@ return (find_prime(n, i));
 }
 /**
 * is_prime_number - function that returns 1 if number is prime and 0 if not
-* @s: integer
+* @n: integer
 * Return: returns 1 if prime 0.if not
 */
 int is_prime_number(int n)
