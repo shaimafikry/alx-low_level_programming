@@ -13,8 +13,8 @@ int main (argc, **argv)
         int m = 0;
 
         for (i = 0; i < argc; i++)
-                for (m = 0; argc[i][m] !='\0'; m++)
+                for (m = 0; argc[i][m] != '\0'; m++)
                         printf("%c", argv[i][m]);
 		printf("\n");
-        Return (0);
+        return (0);
 }
