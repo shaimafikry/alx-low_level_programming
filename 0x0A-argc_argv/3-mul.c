@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 /**
  * main - entry , prints the mltiple of arg passd to it 
  * @argc: count of lines
@@ -18,7 +20,7 @@ int main (int argc, char **argv)
 	}
 	i =  atoi(argv[1]);
 	m = atoi(argv[2]);
-	printf("%d", i * m);
+	printf("%d", (i * m));
 	printf("\n");
         return (0);
 }
