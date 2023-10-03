@@ -1,25 +1,24 @@
 #include <stdio.h>
+#include <stdio.h>
 /**
  * main - entry , prints the mltiple of arg passd to it 
  * @argc: count of lines
  * @argv: string
  * Return: 0 success
  */
-
-
-int main (argc, **argv)
+int main (int argc, char **argv)
 {
         int i;
         int m;
 
         if (argc != 3)
 	{
-		printf("Error\n")
+		printf("Error\n");
 		return (1);
 	}
-	i =  atoi(argc[1]);
-	m = atoi(argc[2]);
+	i =  atoi(argv[1]);
+	m = atoi(argv[2]);
 	printf("%d", i * m);
 	printf("\n");
-        Return (0);
+        return (0);
 }
