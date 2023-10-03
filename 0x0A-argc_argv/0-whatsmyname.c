@@ -9,7 +9,7 @@ int main (int argc, char **argv)
 {
 	int m;
 
-	for (m = 0; argc[0][m] !='\0'; m++)
+	for (m = 0; argv[0][m] !='\0'; m++)
 		printf("%c", argv[0][m]);
 	printf("\n");
 	Return (0);
