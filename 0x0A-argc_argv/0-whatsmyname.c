@@ -13,5 +13,5 @@ int main (int  __attribute__((__unused__)) argc, char **argv)
 	for (m = 0; argv[0][m] !='\0'; m++)
 		printf("%c", argv[0][m]);
 	printf("\n");
-	Return (0);
+	return (0);
 }
