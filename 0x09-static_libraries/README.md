@@ -1,0 +1,1 @@
+how to creat a static library
