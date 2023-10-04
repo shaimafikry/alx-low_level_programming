@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _strdup -  creates array and initialize all of it to a special char
+ * alloc_grid -  creates array and initialize all of it to a special char
  * @width: integer
  * @height: integer
  * Return: pointer to an array
@@ -15,7 +15,6 @@ int **alloc_grid(int width, int height)
 	if (width <= 0 || height <= 0)
 		return (NULL);
 	for (i = 0; i < height; i++)
-	{
 		grid[i] = malloc(sizeof(int) * width);
 	if (grid == NULL)
 	{
@@ -29,5 +28,4 @@ int **alloc_grid(int width, int height)
 		for (m = 0; m < width; m++)
 			grid[i][m] = 0;
 	return (grid);
-	}
 }
