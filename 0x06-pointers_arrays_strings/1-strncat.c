@@ -10,39 +10,36 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-int i;
-int count;
-int count2;
+	int i, co_dest, count2;
 
-count2 = 0;
-count = 0;
-for (i = 0; dest[i] != '\0'; i++)
-{
-count++;
-}
-while (src[i] != '\0')
-{
-count2++;
-}
-i = 0;
-if (n > count2)
-{
-while (i <= count2)
-{
-dest[count] = src[i];
-i++;
-count++;
-}
-}
-i = 0;
-if (n > 0)
-{
-while (i < n)
-{
-dest[count] = src[i];
-i++;
-count++;
-}
-}
-return (dest);
+	count2 = 0, co_dest = 0;
+	for (i = 0; dest[i] != '\0'; i++)
+		co_dest++;
+	i = 0;
+	while (src[i] != '\0')
+	{
+		count2++;
+		i++;
+	}
+	i = 0;
+	if (n > count2)
+	{
+		while (i <= count2)
+		{
+			dest[co_dest] = src[i];
+			i++;
+			co_dest++;
+		}
+	}
+		i = 0;
+		if (n > 0)
+		{
+			while (i < n)
+			{
+			dest[co_dest] = src[i];
+			i++;
+			co_dest++;
+			}
+		}
+		return (dest);
 }
