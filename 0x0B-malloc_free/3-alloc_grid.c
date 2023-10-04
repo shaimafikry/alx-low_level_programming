@@ -1,8 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * alloc_grid -  creates array and initialize all of it to a special char
- * @width: integer
+ * alloc_grid -  creates grid and initialize all to 0
  * @height: integer
  * Return: pointer to an array
 */
