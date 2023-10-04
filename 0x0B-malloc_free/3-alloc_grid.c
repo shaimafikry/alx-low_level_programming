@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 /**
  * alloc_grid -  creates array and initialize all of it to a special char
@@ -20,7 +19,7 @@ int **alloc_grid(int width, int height)
 		free(grid);
 		return (NULL);
 	}
-	for (i = 0; i < height; i++, grid++)
+	for (i = 0; i < height; i++)
 	{
 		grid[i] = malloc(sizeof(int) * width);
 		if (grid[i] == NULL)
@@ -29,12 +28,15 @@ int **alloc_grid(int width, int height)
 			{
 				free(grid[m]);
 			}
-		}
+		
 		free(grid);
 		return (NULL);
+		}
 	}
 	for (i = 0; i < height; i++)
+	{
 		for (m = 0; m < width; m++)
 			grid[i][m] = 0;
+	}
 	return (grid);
 }
