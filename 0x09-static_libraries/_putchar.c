@@ -1,5 +1,10 @@
 #include "main.h"
 /**
+* _putchar - puts a char
+* @c : char
+* Return: return char
+*/
+/**
  * _putchar - prints char
  * @c : char
  * Return: return char
