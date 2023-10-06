@@ -3,6 +3,7 @@
 /**
  * alloc_grid -  creates grid and initialize all to 0
  * @height: integer
+ * @width: integer
  * Return: pointer to an array
 */
 int **alloc_grid(int width, int height)
