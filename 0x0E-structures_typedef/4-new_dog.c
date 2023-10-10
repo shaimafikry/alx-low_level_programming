@@ -1,5 +1,17 @@
 #include "dog.h"
 /**
+ * strcp - copies string
+ * @src: char * 
+ * @des: destination
+ */
+void strcp(char *src, char *dest)
+{
+int i;
+
+for (i = 0 ; src[i] != '/0'; i++)
+dest[i] = src[i];
+}
+/**
  * new_dog - new struct for dog
  * @name: char *
  * @age: float
@@ -13,10 +25,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	p = malloc(sizeof(dog_t));
 	if (p == NULL)
 		return (NULL);
-	p->name = name;
+strcp(name,p->name);
 	p->age = age;
-	p->owner = owner;
+strcp(owner,p->owner);
 	return (p);
-
-
 }
