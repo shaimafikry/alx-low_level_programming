@@ -9,7 +9,7 @@ int strl (char *str)
 int i, count;
 
 count = 0;
-for (i = 0; str[i] != '/0'; i++)
+for (i = 0; str[i] != '\0'; i++)
 count++;
 return (count);
 
@@ -23,7 +23,7 @@ void strcp(char *src, char *dest)
 {
 int i;
 
-for (i = 0 ; src[i] != '/0'; i++)
+for (i = 0 ; src[i] != '\0'; i++)
 dest[i] = src[i];
 }
 /**
