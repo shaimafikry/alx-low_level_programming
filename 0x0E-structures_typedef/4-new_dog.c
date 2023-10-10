@@ -1,5 +1,20 @@
 #include "dog.h"
 /**
+* strl - length of string
+* @str: string
+* Return: string length
+*/
+int strl (char *str)
+{
+int i, count;
+
+count = 0;
+for (i = 0; str[i] != '/0'; i++)
+count++;
+return (count);
+
+}
+/**
  * strcp - copies string
  * @src: char * 
  * @des: destination
@@ -25,6 +40,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	p = malloc(sizeof(dog_t));
 	if (p == NULL)
 		return (NULL);
+p->name = malloc(strl(name) + 1);
+P->owner = malloc(strl(owner) + 1);
+if (p->name == NULL || p->owner == NULL)
+return (NULL);
 strcp(name,p->name);
 	p->age = age;
 strcp(owner,p->owner);
