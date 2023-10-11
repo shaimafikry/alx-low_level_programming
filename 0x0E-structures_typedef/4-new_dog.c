@@ -12,7 +12,6 @@ count = 0;
 for (i = 0; str[i] != '\0'; i++)
 count++;
 return (count);
-
 }
 /**
  * strcp - copies string
@@ -23,7 +22,7 @@ void strcp(char *src, char *dest)
 {
 int i;
 
-for (i = 0 ; src[i] != '\0'; i++)
+for (i = 0; src[i] != '\0'; i++)
 dest[i] = src[i];
 dest[i] = '\0';
 }
@@ -45,8 +44,8 @@ p->name = malloc(strl(name) + 1);
 p->owner = malloc(strl(owner) + 1);
 if (p->name == NULL || p->owner == NULL)
 return (NULL);
-strcp(name,p->name);
+strcp(name, p->name);
 	p->age = age;
-strcp(owner,p->owner);
+strcp(owner, p->owner);
 	return (p);
 }
