@@ -2,7 +2,8 @@
 /**
  * get_op_func -  function pointer selects the correct function to perform the operation asked by the user
  * @s: string
- * 
+ * @b: integer
+ * @s: integer
 */
 int (*get_op_func(char *s))(int, int)
 {
@@ -15,6 +16,7 @@ int (*get_op_func(char *s))(int, int)
         {NULL, NULL}
     };
     int i;
+
     i = 0;
     while (ops[i].op != NULL)
     {
@@ -26,3 +28,4 @@ printf("Error");
 exit(99);
 return (NULL);
 }
+
