@@ -18,9 +18,11 @@ int (*get_op_func(char *s))(int, int)
     i = 0;
     while (ops[i].op != NULL)
     {
-	if (s[2] == ops[i].op)
-		return (get_op_func(ops[i].f(,)));
+	if (s == ops[i].op)
+		return (ops[i].f);
 	i++;
-    }
-    return (NULL);
+}
+printf("Error");
+exit(99);
+return (NULL);
 }
