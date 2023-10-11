@@ -1,7 +1,8 @@
 #include "3-calc.h"
 /**
- * main - entry point
- * func to use a calculate
+ * main - entry point func to use a calculate
+ * @argc: count of arg
+ * @argv: arguments
  * Return: sucess if 0
 */
 int main (int argc, char *argv[])
@@ -10,7 +11,7 @@ int main (int argc, char *argv[])
 	char op;
 
 	op = argv[2][0];
-	if (argc != 4 )
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
@@ -22,7 +23,7 @@ int main (int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-	res = (*get_op_func(argv[2]))(num1,num2);
+	res = (*get_op_func(argv[2]))(num1, num2);
 	printf("%d\n", res);
 	return (0);	
 }
