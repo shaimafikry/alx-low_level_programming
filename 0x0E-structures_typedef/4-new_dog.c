@@ -42,8 +42,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 p->name = malloc(strl(name) + 1);
 p->owner = malloc(strl(owner) + 1);
-if (p->name == NULL || p->owner == NULL)
+if (p->name == NULL)
+{
+free (p->name);
+return(NULL);
+}
+if (p->owner == NULL)
+{
+free(p->owner);
 return (NULL);
+}
 strcp(name, p->name);
 	p->age = age;
 strcp(owner, p->owner);
