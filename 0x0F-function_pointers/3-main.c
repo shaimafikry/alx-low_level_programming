@@ -23,6 +23,11 @@ int main (int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
+if (strlen(argv[2] > 1)
+{
+printf("Error");
+exit(99);
+}
 	res = (*get_op_func(argv[2]))(num1, num2);
 	printf("%d\n", res);
 	return (0);	
