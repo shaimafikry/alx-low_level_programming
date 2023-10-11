@@ -28,7 +28,7 @@ int op_sub(int a, int b)
 */
 int op_mul(int a, int b)
 {
-	return ( a * b);
+	return (a * b);
 }
 /**
  * op_div - divide 2 numbers
@@ -38,7 +38,7 @@ int op_mul(int a, int b)
 */
 int op_div(int a, int b)
 {
-	return ( a / b);
+	return (a / b);
 }
 /**
  * op_mod - module a % b
@@ -48,5 +48,5 @@ int op_div(int a, int b)
 */
 int op_mod(int a, int b)
 {
-	return ( a % b);
+	return (a % b);
 }
