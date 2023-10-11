@@ -28,8 +28,8 @@ free(p->name);
 free(p);
 return (NULL);
 }
-strcpy(name, p->name);
+strncpy(name, p->name);
 p->age = age;
-strcpy(owner, p->owner);
+strncpy(owner, p->owner);
 return (p);
 }
