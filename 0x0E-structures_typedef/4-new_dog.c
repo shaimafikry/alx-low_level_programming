@@ -26,7 +26,7 @@ free(p->name);
 free(p);
 return (NULL);
 }
-p->name = strdup(name);
+strcpy(p->name,name);
 p->age = age;
 p->owner = strdup(owner);
 return (p);
