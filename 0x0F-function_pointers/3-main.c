@@ -15,11 +15,6 @@ int main (int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (op != '+' && (op != '-' && (op != '*' && (op != '/' && op != '%'))))
-	{
-		printf("Error\n");
-		exit(98);
-	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 	if ((op == '/' || op == '%') && num2 == 0)
