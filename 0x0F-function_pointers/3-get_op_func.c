@@ -1,7 +1,26 @@
-#include "calc.h"
+#include "3-calc.h"
 /**
  * get_op_func -  function pointer selects the correct function to perform the operation asked by the user
  * @s: string
  * 
 */
-int (*get_op_func(char *s))(int, int);
+int (*get_op_func(char *s))(int, int)
+{
+	op_t ops[] = {
+        {"+", op_add},
+        {"-", op_sub},
+        {"*", op_mul},
+        {"/", op_div},
+        {"%", op_mod},
+        {NULL, NULL}
+    };
+    int i;
+    i = 0;
+    while (ops[i].op != NULL)
+    {
+	if (s[2] == ops[i].op)
+		return (get_op_func(ops[i].f(,)));
+	i++;
+    }
+    return (NULL);
+}
