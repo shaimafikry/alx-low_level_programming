@@ -10,8 +10,7 @@ int i;
 va_list lst;
 char *check;
 
-i = 0;
-va_start(lst, format);
+i = 0, va_start(lst, format);
 while (format[i])
 {
 switch (format[i])
@@ -37,11 +36,10 @@ case 'c':
 printf("%c", va_arg(lst, int));
 break;
 }
-while (format[i] == 'i' ||  (format[i] == 'c' || format[i] == 's' || format[i] == 'f'))
+while (format[i] == 'i' || (format[i] == 'c' || format[i] == 's' || format[i] == 'f'))
 {
 if (!(format[i + 1] == '\0'))
-printf(", ");
-break;
+printf(", "), break;
 }
 i++;
 }
