@@ -25,7 +25,7 @@ int main (int argc, char *argv[])
 	}
 if (strlen(argv[2]) > 1)
 {
-printf("Error");
+printf("Error\n");
 exit(99);
 }
 	res = (*get_op_func(argv[2]))(num1, num2);
