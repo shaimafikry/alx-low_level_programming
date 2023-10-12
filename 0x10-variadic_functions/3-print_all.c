@@ -6,29 +6,45 @@
 */
 void print_all(const char * const format, ...)
 {
-	int i;
-	va_list lst;
-	char *check;
+int i;
+va_list lst;
+char *check;
 
-	i = 0;
-	va_start(lst, format);
-	while (format[i])
-	{
-		if (format[i] == 'c')
-			printf("%c ", va_arg(lst, int));
-	else	if (format[i] == 'i')
-			printf("%d ", va_arg(lst, int));
-	else if (format[i] == 'f')
-			printf("%f ", va_arg(lst, double));
-		while (format[i] == 's')
-		{
-			check = va_arg(lst, char *);
-			if (check == NULL)
-				printf("(nil)");
-			printf("%s ", check);
-		}
-		i++;
-	}
-	printf("\n");
-	va_end(lst);
+i = 0;
+va_start(lst, format);
+while (format[i])
+{
+switch (format[i])
+{
+case 'i' :
+printf("%d", va_arg(lst, int));
+break;
+case 'f':
+printf("%f", va_arg(lst, double));
+break;
+case 's':
+{
+check = va_arg(lst, char *);
+if (check == NULL)
+{
+printf("(nil)");
+break;
+}
+printf("%s", check);
+break;
+}
+case 'c':
+printf("%c", va_arg(lst, int));
+break;
+}
+while (format[i] == 'i' ||  (format[i] == 'c' || format[i] == 's' || format[i] == 'f'))
+{
+if (!(format[i + 1] == '\0'))
+printf(", ");
+break;
+}
+i++;
+}
+printf("\n");
+va_end(lst);
 }
