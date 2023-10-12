@@ -23,7 +23,7 @@ if (op[1] != '\0')
 printf("Error\n");
 exit(99);
 }
-if (op[0] == '/' || op[0] == '%') && num2 == 0)
+if ((op[0] == '/' || op[0] == '%') && num2 == 0)
 {
 printf("Error\n");
 exit(100);
