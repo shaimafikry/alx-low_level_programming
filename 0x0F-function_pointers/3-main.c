@@ -18,7 +18,7 @@ exit(98);
 }
 num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
-if (op[1] != '\0')
+if (get_op_func == NULL || op[1] != '\0')
 {
 printf("Error\n");
 exit(99);
