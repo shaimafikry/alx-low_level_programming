@@ -18,12 +18,14 @@ void print_all(const char * const format, ...)
 			printf("%c ", va_arg(lst, int));
 		if (format[i] == 'i')
 			printf("%d ", va_arg(lst, int));
-		while (format[i] == 'f')
+		if (format[i] == 'f')
 			printf("%f ", va_arg(lst, double));
-		if (format[i] == 's')
+		while (format[i] == 's')
 		{
 			check = va_arg(lst, char *);
-			printf(check == NULL ? "(nil)" : "%s ", check);
+			if (check == NULL)
+				printf("(nil)");
+			printf("%s ", check);
 		}
 		i++;
 	}
