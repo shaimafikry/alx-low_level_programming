@@ -40,7 +40,7 @@ while (format[i] == 'i' ||
 (format[i] == 'c' ||
 (format[i] == 's' || format[i] == 'f')))
 {
-if (!(format[i + 1] == '\0'))
+if (format[i + 1] != '\0')
 printf(", ");
 break;
 }
