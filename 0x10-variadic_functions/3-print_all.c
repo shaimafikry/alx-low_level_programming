@@ -11,7 +11,7 @@ va_list lst;
 char *check;
 
 i = 0, va_start(lst, format);
-while (format[i])
+while (format && format[i])
 {
 switch (format[i])
 {
@@ -26,9 +26,7 @@ case 's':
 check = va_arg(lst, char *);
 if (check == NULL)
 {
-printf("(nil)");
-break;
-}
+check = "(nil)";
 printf("%s", check);
 break;
 }
