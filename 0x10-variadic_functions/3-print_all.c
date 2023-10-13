@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 /**
- * print_all -  print all given numbers
+ * print_all - print all given numbers
  * @format: const char
  * Return: no return
 */
