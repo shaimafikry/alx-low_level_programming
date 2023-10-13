@@ -46,6 +46,5 @@ break;
 }
 i++;
 }
-printf("\n");
-va_end(lst);
+printf("\n"), va_end(lst);
 }
