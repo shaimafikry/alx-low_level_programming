@@ -15,7 +15,7 @@ while (format[i])
 {
 switch (format[i])
 {
-case 'i' :
+case 'i':
 printf("%d", va_arg(lst, int));
 break;
 case 'f':
@@ -36,7 +36,9 @@ case 'c':
 printf("%c", va_arg(lst, int));
 break;
 }
-while (format[i] == 'i' || (format[i] == 'c' || format[i] == 's' || format[i] == 'f'))
+while (format[i] == 'i' ||
+(format[i] == 'c' ||
+format[i] == 's' || format[i] == 'f'))
 {
 if (!(format[i + 1] == '\0'))
 printf(", ");
