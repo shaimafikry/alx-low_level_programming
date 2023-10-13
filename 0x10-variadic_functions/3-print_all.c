@@ -11,6 +11,8 @@ va_list lst;
 char *check;
 
 i = 0, va_start(lst, format);
+if (format != NULL)
+{
 while (format[i])
 {
 switch (format[i])
@@ -47,4 +49,5 @@ break;
 i++;
 }
 printf("\n"), va_end(lst);
+}
 }
