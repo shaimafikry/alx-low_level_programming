@@ -25,7 +25,6 @@ case 's':
 {
 check = va_arg(lst, char *);
 if (check == NULL)
-{
 check = "(nil)";
 printf("%s", check);
 break;
