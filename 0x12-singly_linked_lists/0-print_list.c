@@ -18,12 +18,12 @@ size_t print_list(const list_t *h)
 	if (m == NULL)
 		return (-1);
 	m->str = malloc(sizeof(h->str));
-	if (m->str == NULL)
+	/*if (m->str == NULL)
 	{
 		free(m->str);
 		free(m);
 		return (-1);
-	}
+	}*/
 	m->str = h->str;
 	m->len = h->len;
 	m->next = h->next;
