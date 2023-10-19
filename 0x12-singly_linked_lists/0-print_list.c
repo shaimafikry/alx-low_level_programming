@@ -8,28 +8,25 @@ size_t print_list(const list_t *h)
 {
 	int i;
 	list_t *m;
-	const list_t *ptr;
 
 	i = 0;
 	if (h == NULL)
 	{
 		return (i);
 	}
-	ptr = h;
 	m = malloc(sizeof(list_t));
 	if (m == NULL)
 		return (-1);
 	m->str = malloc(sizeof(h->str));
 	if (m->str == NULL)
 	{
-		free(m->str);
 		free(m);
 		return (-1);
 	}
 	m->str = h->str;
 	m->len = h->len;
 	m->next = h->next;
-	while (ptr != NULL)
+	while (m != NULL)
 	{
 		if (m->str == NULL)
 		{
@@ -37,7 +34,6 @@ size_t print_list(const list_t *h)
 			m->len = 0;
 		}
 		printf("[%d] %s\n", m->len, m->str);
-		ptr = ptr->next;
 		m = m->next;
 		i++;
 	}
