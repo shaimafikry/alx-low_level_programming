@@ -4,3 +4,4 @@ singly_linked_lists test solve
 2-add_node.c - function that adds a new node at the beginning of a list_t list.
  3-add_node_end.c - function that adds a new node at the end of a list_t list.
  4-free_list.c -  function that frees a list_t list.
+100-first -  how to use attribute constrctor to excute things before main
