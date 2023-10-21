@@ -5,10 +5,8 @@
  * @char * : a pointer to char
  * Return: return pointer to char
  */
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
-	char *str;
-
 	if (str == NULL)
 		return (-1);
 	while (str != 0)
