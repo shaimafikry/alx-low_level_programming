@@ -7,5 +7,22 @@
  * Return: return pointer to dest
  */
 
-char *_strncpy(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n)
+{
+	int i, count;
 
+	count = 0;
+	for (i = 0; src[i] != '\0'; i++)
+		count++;
+	if (n > count)
+	{
+		for (i = 0; src[i] != '\0'; i++)
+		{
+			dest[i] = src[i];
+		}
+	}
+	for (i = 0; i < n; i++)
+	{
+		dest[i] = src[i];
+	}
+	return (dest);
