@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib>
+#include <stdlib.h>
 /**
  * reverse_array - print reversed array
  * @a : a pointer to array
