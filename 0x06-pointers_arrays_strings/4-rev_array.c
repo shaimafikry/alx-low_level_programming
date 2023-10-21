@@ -13,10 +13,11 @@ void reverse_array(int *a, int n)
 
 	i = 0;
 	b = malloc(sizeof(int) * n);
-	while (n > i)
+	while (n)
 	{
 		b[i] = a[n];
 		i++;
+		n--;
 	}
 	i = 0;
 	while (i < n)
