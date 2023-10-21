@@ -16,7 +16,7 @@ char *_strncpy(char *dest, char *src, int n)
 	for (i = 0; src[i] != '\0'; i++)
 		count++;
 	if (!*src)
-		return (dest);
+		count = 0;
 	if (n > count)
 	{
 		for (i = 0; src[i] != '\0'; i++)
