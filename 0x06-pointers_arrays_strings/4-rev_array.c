@@ -1,6 +1,4 @@
-
 #include "main.h"
-
 /**
  * reverse_array - print reversed array
  * @a : a pointer to array
@@ -10,19 +8,17 @@
 void reverse_array(int *a, int n)
 {
 	int i;
-	int r[n];
-
+	int *b;
 	i = 0;
 	while (n > i)
 	{
-		r[i] = a[n];
+		b[i] = a[n];
 		i++;
 	}
 	i = 0;
 	while (i < n)
 	{
-		a[i] = r[i];
+		a[i] = b[i];
 		i++;
 	}
-	return (a);
 }
