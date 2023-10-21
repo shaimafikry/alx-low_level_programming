@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib>
 /**
  * reverse_array - print reversed array
  * @a : a pointer to array
@@ -11,7 +12,7 @@ void reverse_array(int *a, int n)
 	int *b;
 
 	i = 0;
-	b[0] = 0;
+	b = malloc(sizeof(int) * n);
 	while (n > i)
 	{
 		b[i] = a[n];
@@ -23,4 +24,5 @@ void reverse_array(int *a, int n)
 		a[i] = b[i];
 		i++;
 	}
+	free(b);
 }
