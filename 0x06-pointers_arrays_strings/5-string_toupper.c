@@ -2,14 +2,11 @@
 #include <stdlib.h>
 /**
  * string_toupper - copy strings src to dest
- * @s: a pointer to char
+ * @str: a pointer to char
  * Return: return pointer to char
  */
-char *string_toupper(char *s)
+char *string_toupper(char *str)
 {
-	char *str;
-
-	str = s;
 	while (*str != '\0')
 	{
 		if (*str >= 'a' && *str <= 'z')
