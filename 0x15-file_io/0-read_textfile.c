@@ -21,7 +21,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		{
 			break;
 		}
-		dprintf(1, "%c", c);
+		dprintf(0, "%c", c);
 		i++;
 	}
 	fclose(f);
