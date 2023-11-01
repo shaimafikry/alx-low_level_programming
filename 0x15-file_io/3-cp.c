@@ -9,6 +9,7 @@
 
 int main(int argc, char *argv[])
 {
+	int i = 0;
 	char c;
 	char *file1 = argv[1];
 	char *file2 = argv[2];
@@ -43,8 +44,11 @@ int main(int argc, char *argv[])
 	c = fgetc(from);
 	while (c != EOF)
 	{
+		if (i == 1024)
+			break;
 		fputc(c, to);
 		c = fgetc(from);
+		i++;
 	}
 	if (fclose(from) == 0 || fclose(to) == 0) {
 		dprintf(STDERR_FILENO, "Error: Can't close fd r\n");
