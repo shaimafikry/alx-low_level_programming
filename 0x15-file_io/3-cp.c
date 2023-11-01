@@ -46,6 +46,10 @@ int main(int argc, char *argv[])
 		fputc(c, to);
 		c = fgetc(from);
 	}
+	if (fclose(from) == -1 || fclose(to) == -1) {
+		dprintf(STDERR_FILENO, "Error: Can't close fd\n");
+		exit(100);
+	}
 	fclose(from);
 	fclose(to);
 	return (1);
