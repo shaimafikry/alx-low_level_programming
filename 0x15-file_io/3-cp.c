@@ -8,10 +8,9 @@
  */
 int main(int argc, char *argv[])
 {
-	char c[BUFFER_SIZE];
-	int b_rd, b_wr;
-	char *file1 = argv[1], *file2 = argv[2];
-	int from = open(file1, O_RDONLY), to = open(file2, O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	char c[BUFFER_SIZE], *file1 = argv[1], *file2 = argv[2];
+	int from = open(file1, O_RDONLY), b_rd, b_wr;
+	int to = open(file2, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
 	if (argc != 3 || (file1 == NULL || file2 == NULL))
 	{
