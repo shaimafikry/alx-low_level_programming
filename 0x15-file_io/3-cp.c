@@ -18,12 +18,12 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	if (from == -1)
+	if (from == -1 || file1 == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s", file1);
 		exit(98);
 	}
-	if (to == -1)
+	if (to == -1 || file2 == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file2);
 		exit(99);
