@@ -4,7 +4,6 @@
  * main - program that copies the content of a file to another file.
  * @argc: count of inputs
  * @argv: file names
- * Usage: cp file_from file_to
  * Return: 0 in sucsses
  */
 int main(int argc, char *argv[])
@@ -12,8 +11,7 @@ int main(int argc, char *argv[])
 	char c[BUFFER_SIZE];
 	int b_rd, b_wr;
 	char *file1 = argv[1], *file2 = argv[2];
-	int from = open(file1, O_RDONLY);
-	int to = open(file2, O_WRONLY | O_CREAT | O_TRUNC, 0644);
+	int from = open(file1, O_RDONLY), to = open(file2, O_WRONLY | O_CREAT | O_TRUNC, 0644);
 
 	if (argc != 3)
 	{
@@ -44,12 +42,10 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from);
 		exit(100);
 	}
-
 	if (close(to) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", to);
 		exit(100);
 	}
-	close(from), close(to);
 	return (0);
 }
