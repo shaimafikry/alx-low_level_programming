@@ -1,4 +1,5 @@
 #include "main.h"
+#define BUFFER_SIZE 1024
 /**
  * main - program that copies the content of a file to another file.
  * @argc: count of inputs
@@ -9,48 +10,36 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 0;
-	char c;
+	char c[BUFFER_SIZE];
+	/*int b_rd, b_wr;*/
 	char *file1 = argv[1];
 	char *file2 = argv[2];
 	FILE *from = fopen(file1, "r");
 	FILE *to = fopen(file2, "w");
 
-	/*if num of arg isnt correct ,exit 97 print useage :cp file_from file_to\n*/
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	/**
-	 * if file_from not exist, or can not read it,
-	 * exit 98 print Error: Can't read from file NAME_OF_THE_FILE\n
-	*/
 	if (from == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s", file1);
 		exit(98);
 	}
-	/**
-	 * if you can not create or if write to file_to fails,exit 99
-	 * print Error: Can't write to NAME_OF_THE_FILE, followed by a new line
-	*/
 	if (to == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file2);
 		exit(99);
 	}
 	chmod(file2, 0664);
-	c = fgetc(from);
-	while (c != EOF)
+
+	while (fgets(c,BUFFER_SIZE,from) != NULL)
 	{
-		if (i == 1024)
-			break;
-		fputc(c, to);
-		c = fgetc(from);
-		i++;
+		fprintf(to,"%s",c);
 	}
-	if (fclose(from) == 0 || fclose(to) == 0) {
+	if (fclose(from) == 0 || fclose(to) == 0)
+	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd r\n");
 		exit(100);
 	}
