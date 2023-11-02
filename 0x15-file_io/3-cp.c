@@ -15,18 +15,15 @@ int main(int argc, char *argv[])
 	if (argc != 3 || (file1 == NULL || file2 == NULL))
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(97);
-	}
+		exit(97); }
 	if (from == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file1);
-		exit(98);
-	}
+		exit(98); }
 	if (to == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file2);
-		exit(99);
-	}
+		exit(99); }
 	while ((b_rd = read(from, c, BUFFER_SIZE)) > 0)
 	{
 		b_wr = write(to, c, b_rd);
@@ -34,22 +31,18 @@ int main(int argc, char *argv[])
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file2);
 			exit(99);
-		}
-	}
+		}}
 	if (b_rd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file1);
-		exit(98);
-	}
+		exit(98); }
 	if (close(from) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from);
-		exit(100);
-	}
+		exit(100); }
 	if (close(to) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", to);
-		exit(100);
-	}
+		exit(100); }
 	return (0);
 }
