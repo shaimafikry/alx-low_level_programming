@@ -7,43 +7,43 @@
  * Usage: cp file_from file_to
  * Return: 0 in sucsses
  */
-
 int main(int argc, char *argv[])
 {
 	char c[BUFFER_SIZE];
-	/*int b_rd, b_wr;*/
-	char *file1 = argv[1];
-	char *file2 = argv[2];
-	FILE *from = fopen(file1, "r");
-	FILE *to = fopen(file2, "w");
+	int b_rd, b_wr;
+	char *file1 = argv[1], *file2 = argv[2];
+	int from = open(file1, O_RDONLY);
+	int to = open(file2, O_WRONLY | O_CREAT | O_TRUNC, 0644);
 
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	if (from == NULL)
+	if (from == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s", file1);
 		exit(98);
 	}
-	if (to == NULL)
+	if (to == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file2);
 		exit(99);
 	}
-	chmod(file2, 0664);
-
-	while (fgets(c,BUFFER_SIZE,from) != NULL)
+	while ((b_rd = read(from, c, BUFFER_SIZE)) > 0)
 	{
-		fprintf(to,"%s",c);
+		b_wr = write(to, c, b_rd);
+		if (b_wr != b_rd)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file2);
+			exit(99);
+		}
 	}
-	if (fclose(from) == 0 || fclose(to) == 0)
+	if (close(from) == -1 || close(to) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd r\n");
 		exit(100);
 	}
-	fclose(from);
-	fclose(to);
+	close(from), close(to);
 	return (0);
 }
