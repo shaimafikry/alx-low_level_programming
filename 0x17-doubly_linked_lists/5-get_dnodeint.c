@@ -1,6 +1,9 @@
 #include "lists.h"
 /**
- * 
+ * get_dnodeint_at_index -  get node at the index
+ * @head: list
+ * @index: num of node
+ * Return: node at index
 */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
@@ -9,11 +12,13 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 
 	current = head;
-	while (i != index)
+	while (current != NULL)
 	{
 		current = current->next;
 		i++;
-	}
-	return (current);
+		if (i == index)
+			return (current);
 
+	}
+	return (NULL);
 }
