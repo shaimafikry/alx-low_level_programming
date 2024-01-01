@@ -27,7 +27,7 @@ index = key_index((const unsigned char *)key, ht->size);
 
 if (item->key == ht->array[index]->key)
 	{
-		ht->array[index]->value = malloc(len(value) + 1);
+		ht->array[index]->value = malloc(strlen(value) + 1);
 		ht->array[index]->value = strdup(value);
 		return (1);
 
