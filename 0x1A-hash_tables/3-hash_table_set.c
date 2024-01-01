@@ -25,7 +25,7 @@ item->value = strdup(value);/*duplicate the value*/
 item->next = NULL;
 index = key_index((const unsigned char *)key, ht->size);
 
-item->next = ht->array[index];/*to check if the index is empty*/
+/*item->next = ht->array[index];*/
 ht->array[index]=item;
 return (1);
 }
