@@ -27,5 +27,6 @@ for (index = 0; index < ht->size; index++)
 	}
 	free(ht->array[index]);
 }
+free(head);
 free(ht);
 }
