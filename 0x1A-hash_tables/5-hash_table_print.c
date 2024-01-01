@@ -17,12 +17,12 @@ printf("{");
 for (index = 0; index < ht->size; index++)
 {
 	current = ht->array[index];
-	n = 0; 
+	n = 0;
 	while (current != NULL)
 	{
 		if (n)
 			printf(", ");
-		printf("'%s': '%s'",current->key, current->value);
+		printf("'%s': '%s'", current->key, current->value);
 		current = current->next;
 		n = 1;
 	}
