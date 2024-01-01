@@ -8,18 +8,12 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 unsigned int index;
-char *value;
 
 /*handling error*/
 if (ht == NULL || key == NULL)
 	return (NULL);
-/*memroy allocation*/
 index = key_index((const unsigned char *)key, ht->size);
 if (!ht->array[index])
 	return (NULL);
-value = malloc(sizeof(ht->array[index]->value));
-	if (!value)
-		return (NULL);
-value = ht->array[index]->value;
-return (value);
+return (ht->array[index]->value);
 }
