@@ -19,7 +19,7 @@ for (index = 0; index < ht->size; index++)
 	current = ht->array[index];
 	while (current != NULL)
 	{
-		if ( n == 0)
+		if (n == 0)
 		{
 			printf("'%s': '%s'", current->key, current->value);
 			n = 1;
