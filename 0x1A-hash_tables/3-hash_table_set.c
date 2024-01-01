@@ -23,7 +23,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!item->key || !item->value)
 		return (0);
 	table = ht;
-	item->key =  key;
+	item->key = (char *)key;
 	item->value = strdup(value);/*duplicate the value*/
 	index = key_index((const unsigned char*)key, table->size);
 
