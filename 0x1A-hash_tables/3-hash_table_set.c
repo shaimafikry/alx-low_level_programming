@@ -26,6 +26,6 @@ item->next = NULL;
 index = key_index((const unsigned char *)key, ht->size);
 
 item->next = ht->array[index];
-ht->array[index]=item;
+ht->array[index] = item;
 return (1);
 }
