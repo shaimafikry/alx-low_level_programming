@@ -21,7 +21,7 @@ while (current != NULL)
 {
 	if (strcmp(key, current->key) == 0)
 	{
-		return (ht->array[index]->value);
+		return (current->value);
 	}
 	current = current->next;
 
