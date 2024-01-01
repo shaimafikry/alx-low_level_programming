@@ -18,7 +18,7 @@ for (index = 0; index < ht->size; index++)
 {
 	current = ht->array[index];
 	n = 0; 
-	while (current!= NULL)
+	while (current != NULL)
 	{
 		if (n)
 			printf(", ");
