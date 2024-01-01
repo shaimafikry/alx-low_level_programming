@@ -9,6 +9,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 hash_node_t *item;
+hash_node_t *current;
 unsigned int index;
 
 /*handling error*/
@@ -25,17 +26,17 @@ item->value = strdup(value);/*duplicate the value*/
 item->next = NULL;
 index = key_index((const unsigned char *)key, ht->size);
 
-if (item->key == ht->array[index]->key)
+current = ht->array[index];
+if (current != NULL)
+{
+	if (strcmp(item->key, current->key) == 0)
 	{
-		ht->array[index]->value = realloc(ht->array[index]->value, strlen(value) + 1);
-		ht->array[index]->value = strdup(value);
+		current->value = realloc(current->value, strlen(value) + 1);
+		current->value = strdup(value);
 		return (1);
-
 	}
-else
-	{
-		item->next = ht->array[index];
-		ht->array[index] = item;
-	}
+}
+item->next = ht->array[index];
+ht->array[index] = item;
 return (1);
 }
