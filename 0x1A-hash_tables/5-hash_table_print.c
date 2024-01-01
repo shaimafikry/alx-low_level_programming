@@ -21,11 +21,11 @@ for (index = 0; index < ht->size; index++)
 	{
 		if (n)
 			printf(", ");
+		n = 1;
 		printf("'%s': '%s'", current->key, current->value);
 		current = current->next;
-		
 	}
-	n = 1;
+	n = 0;
 }
 	printf("}");
 printf("\n");
