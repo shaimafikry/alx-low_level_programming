@@ -8,7 +8,6 @@ void hash_table_print(const hash_table_t *ht)
 {
 unsigned int index;
 hash_node_t *current;
-int n = 1;
 
 /*handling error*/
 if (ht == NULL)
