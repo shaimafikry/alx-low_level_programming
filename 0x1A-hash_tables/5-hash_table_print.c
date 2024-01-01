@@ -19,11 +19,11 @@ for (index = 0; index < ht->size; index++)
 	current = ht->array[index];
 	while (current != NULL)
 	{
-		if (n)
-			printf(", ");
 		printf("'%s': '%s'", current->key, current->value);
 		current = current->next;
-		n = 0;
+		if (n)
+			printf(", ");
+		
 	}
 	n = 1;
 }
