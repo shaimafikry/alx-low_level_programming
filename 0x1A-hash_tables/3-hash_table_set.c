@@ -23,8 +23,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!item->key || !item->value)
 		return (0);
 	table = ht;
-	item->key = (char *)key;
+	item->key =  strdup(key);
 	item->value = strdup(value);/*duplicate the value*/
+	item->next = NULL;
 	index = key_index((const unsigned char*)key, table->size);
 
 	head = table->array[index];/*to check if the index is empty*/
@@ -33,8 +34,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	else
 	{
 		item->next = head;
-		head = item;
-		table->array[index] = item;
+		head->next = NULL;
+		table->array[index] = item; 
 	}
 	return (1);
 }
