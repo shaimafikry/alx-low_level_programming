@@ -24,8 +24,8 @@ for (index = 0; index < ht->size; index++)
 			printf(", ");
 		printf("'%s': '%s'", current->key, current->value);
 		current = current->next;
+		n = 1;
 	}
-	n = 1;
 }
 	printf("}");
 printf("\n");
