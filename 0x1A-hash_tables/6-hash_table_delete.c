@@ -1,15 +1,14 @@
 #include "hash_tables.h"
 /**
- * hash_table_delete - function that retrieves a value associated with a key.
+ * hash_table_delete - function that free a hash table.
  * @ht: hash table
  * Return: no return
 */
 void hash_table_delete(hash_table_t *ht)
 {
-unsigned int index;
+unsigned long int index;
 hash_node_t *current;
 hash_node_t *head;
-
 
 /*handling error*/
 if (ht == NULL)
@@ -25,7 +24,6 @@ for (index = 0; index < ht->size; index++)
 		free(current->value);
 		free(current);
 	}
-	free(ht->array[index]);
 }
 free(ht->array);
 free(ht);

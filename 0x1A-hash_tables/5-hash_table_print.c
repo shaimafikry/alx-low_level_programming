@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
- * hash_table_print - function that retrieves a value associated with a key.
+ * hash_table_print - function that prints a table.
  * @ht: hash table
  * Return: no return
 */
