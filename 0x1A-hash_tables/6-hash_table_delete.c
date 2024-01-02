@@ -10,9 +10,9 @@ unsigned long int index;
 hash_node_t *current;
 hash_node_t *head;
 
-/*handling error*/
-if (ht == NULL)
-	return;
+/handling error/
+if (ht)
+{
 for (index = 0; index < ht->size; index++)
 {
 	head = ht->array[index];
@@ -27,4 +27,5 @@ for (index = 0; index < ht->size; index++)
 }
 free(ht->array);
 free(ht);
+}
 }
