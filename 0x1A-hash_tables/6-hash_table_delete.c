@@ -20,12 +20,10 @@ for (index = 0; index < ht->size; index++)
 	while (head != NULL)
 	{
 		current = head;
-		free(current->value);
-		free(current->key);
-		free(current);
 		head = head->next;
-
+		free(current);
 	}
 }
+free(ht->array);
 free(ht);
 }
