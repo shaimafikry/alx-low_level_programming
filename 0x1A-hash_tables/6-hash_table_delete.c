@@ -21,6 +21,8 @@ for (index = 0; index < ht->size; index++)
 	{
 		current = head;
 		head = head->next;
+		free(current->key);
+		free(current->value);
 		free(current);
 	}
 }
