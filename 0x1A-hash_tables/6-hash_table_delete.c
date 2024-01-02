@@ -25,6 +25,7 @@ for (index = 0; index < ht->size; index++)
 		free(current->value);
 		free(current);
 	}
+	free(ht->array[index]);
 }
 free(ht->array);
 free(ht);
