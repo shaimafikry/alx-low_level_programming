@@ -15,9 +15,6 @@ unsigned int index;
 /*handling error*/
 if (ht == NULL || value == NULL)
 	return (0);
-/*memroy allocation*/
-item = malloc(sizeof(hash_node_t));
-item->next = NULL;
 index = key_index((const unsigned char *)key, ht->size);
 
 current = ht->array[index];
@@ -30,6 +27,8 @@ if (current != NULL)
 		return (1);
 	}
 }
+item = malloc(sizeof(hash_node_t));
+item->next = NULL;
 item->key = strdup(key);
 item->value = strdup(value);
 item->next = ht->array[index];
