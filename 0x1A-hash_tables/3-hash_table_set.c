@@ -17,7 +17,6 @@ if (ht == NULL || value == NULL)
 	return (0);
 /*memroy allocation*/
 item = malloc(sizeof(hash_node_t));
-item->value = strdup(value);/*duplicate the value*/
 item->next = NULL;
 index = key_index((const unsigned char *)key, ht->size);
 
@@ -32,6 +31,7 @@ if (current != NULL)
 	}
 }
 item->key = strdup(key);
+item->value = strdup(value);
 item->next = ht->array[index];
 ht->array[index] = item;
 return (1);
