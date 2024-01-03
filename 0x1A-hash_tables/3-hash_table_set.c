@@ -17,8 +17,6 @@ if (ht == NULL || value == NULL)
 	return (0);
 /*memroy allocation*/
 item = malloc(sizeof(hash_node_t));
-if (!item->key || !item->value)
-	return (0);
 item->key = strdup(key);
 item->value = strdup(value);/*duplicate the value*/
 item->next = NULL;
