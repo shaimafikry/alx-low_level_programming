@@ -27,7 +27,7 @@ if (current != NULL)
 {
 	if (strcmp(item->key, current->key) == 0)
 	{
-		free(current->valu)e;
+		free(current->value);
 		current->value = strdup(value);
 		return (1);
 	}
