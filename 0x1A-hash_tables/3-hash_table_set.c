@@ -27,7 +27,7 @@ if (current != NULL)
 {
 	if (strcmp(item->key, current->key) == 0)
 	{
-		current->value = realloc(current->value, strlen(value) + 1);
+		free(current->valu)e;
 		current->value = strdup(value);
 		return (1);
 	}
