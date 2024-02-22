@@ -8,6 +8,7 @@ all: re clean oclean fclean
 
 #deletes all Emacs and Vim temporary files along with the executable
 clean:
+	$(RM) *~ $(NAME)
 
 #deletes the object files
 oclean:
