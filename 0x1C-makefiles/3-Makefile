@@ -2,24 +2,27 @@ NAME = school
 CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
-RM = rm
+RM = rm -f
 
-all: clean oclean fclean re
+.PHONY: all clean fclean oclean re
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	${CC} -o $(NAME)
+
+%.o: %.c
+	${CC} -c $< -o $@
 
 #deletes all Emacs and Vim temporary files along with the executable
 clean:
-	$(RM) *~ $(NAME)
+	$(RM) *~ *.swp *.swo $(NAME)
 
 #deletes the object files
 oclean:
 	$(RM) *.o
 
 #deletes all Emacs and Vim temporary files, the executable, and the object files
-fclean:
-	$(RM) $(OBJ) $(NAME)
-#forces recompilation of all source files
-re: $(SRC)
-	${CC} $^ $(NAME)
+fclean: oclean clean
 
-%.o: %.c
-	${CC} -c $< -o $@
+#forces recompilation of all source files
+re : fclean all
