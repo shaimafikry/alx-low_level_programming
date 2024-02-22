@@ -12,22 +12,23 @@ def island_perimeter(grid):
     for i in range(len(grid)):
         for m in range(len(grid[i])):
             if grid[i][m] == 1:
-                if grid[i - 1][m] == 0:
-                    area += 1
-                if grid[i][m - 1] == 0:
-                    area += 1
-                if m + 1 < len(grid[i]):
-                    if grid [i][m + 1] == 0:
-                        area += 1
-                else:
-                    area += 1
-                if i + 1 < len(grid):
-                    if grid[i + 1][m] == 0:
-                        area += 1
-                else:
-                    area += 1
+                area += 1
+                # if grid[i - 1][m] == 0:
+                #     area += 1
+                # if grid[i][m - 1] == 0:
+                #     area += 1
+                # if m + 1 < len(grid[i]):
+                #     if grid [i][m + 1] == 0:
+                #         area += 1
+                # else:
+                #     area += 1
+                # if i + 1 < len(grid):
+                #     if grid[i + 1][m] == 0:
+                #         area += 1
+                # else:
+                #     area += 1
 
-    return area
+    return (area * 2) + 2
 
 
 # grid =[
@@ -36,21 +37,5 @@ def island_perimeter(grid):
 #        [1, 1, 0, 1, 1, 1],
 #        [0, 1, 1, 1, 0, 0],
 #        [0, 0, 1, 1, 0, 0]]
-grid = [
-    [0, 1, 0, 0, 0, 1],
-    [1, 1, 0, 0, 0, 1],
-    [1, 1, 0, 1, 1, 1],
-    [0, 1, 1, 1, 0, 0],
-    [0, 0, 1, 1, 0, 0],
-]
-# grid = [
-#      [0, 0, 0, 0, 0, 0],
-#      [0, 1, 1, 1, 0, 0],
-#      [0, 1, 1, 1, 0, 0],
-#      [0, 1, 1, 1, 0, 0]]
-# grid=  [[0, 0, 0, 0, 0, 0],
-#         [0, 1, 0, 0, 0, 0],
-#         [0, 1, 0, 0, 0, 0],
-#         [0, 1, 1, 1, 0, 0],
-#         [0, 0, 0, 0, 0, 0] ]
-print(island_perimeter(grid))
+
+# print(island_perimeter(grid))
