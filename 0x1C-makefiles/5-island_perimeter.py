@@ -25,3 +25,12 @@ def island_perimeter(grid):
                     area += 1
                     
     return area
+
+grid = [
+        [0, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 1, 1, 1, 0, 0],
+        [0, 0, 0, 0, 0, 0]
+    ]
+print(island_perimeter(grid))
