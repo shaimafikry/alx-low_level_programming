@@ -27,8 +27,8 @@ def island_perimeter(grid):
                 #         area += 1
                 # else:
                 #     area += 1
-
-    return (area * 2) + 2
+    res = (area * 2) - (2 * (area-1))
+    return res
 
 
 # grid =[
