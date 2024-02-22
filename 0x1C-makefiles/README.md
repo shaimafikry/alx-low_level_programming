@@ -22,3 +22,9 @@ make file description:
 	- defines variables at the top of the file
 	- its on UPPER CASE
 	- when  you get to use it you write it like $(variable_name) or $ {variable_name}
+tips:
+	$^ --> all prerequists (if the prerequists is a variable it takes all its files)
+	$< --> first prerequists (if the prerequists is a variable it takes first one of its files)
+	$@ --> representing the name of the target
+
+targets : cn include other targets without recipes -->> CHECK (3,4-Makefile)
