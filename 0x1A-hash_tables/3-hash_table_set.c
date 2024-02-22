@@ -15,27 +15,22 @@ unsigned int index;
 /*handling error*/
 if (ht == NULL || value == NULL)
 	return (0);
-/*memroy allocation*/
-item = malloc(sizeof(hash_node_t));
-item->key = malloc(strlen(key) + 1);
-item->value = malloc(strlen(value) + 1);
-if (!item->key || !item->value)
-	return (0);
-item->key = strdup(key);
-item->value = strdup(value);/*duplicate the value*/
-item->next = NULL;
 index = key_index((const unsigned char *)key, ht->size);
 
 current = ht->array[index];
 if (current != NULL)
 {
-	if (strcmp(item->key, current->key) == 0)
+	if (strcmp(key, current->key) == 0)
 	{
-		current->value = realloc(current->value, strlen(value) + 1);
+		free(current->value);
 		current->value = strdup(value);
 		return (1);
 	}
 }
+item = malloc(sizeof(hash_node_t));
+item->next = NULL;
+item->key = strdup(key);
+item->value = strdup(value);
 item->next = ht->array[index];
 ht->array[index] = item;
 return (1);
