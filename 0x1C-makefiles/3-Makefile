@@ -12,7 +12,7 @@ clean:
 
 #deletes the object files
 oclean:
-	$(RM)*.o
+	$(RM) *.o
 
 #deletes all Emacs and Vim temporary files, the executable, and the object files
 fclean:
