@@ -12,10 +12,7 @@ def island_perimeter(grid):
     for i in range(len(grid)):
         for m in range(len(grid[i])):
             if grid[i][m] == 1:
-                if i - 1 >= 0:
-                    if grid[i - 1][m] == 0:
-                        area += 1
-                else:
+                if grid[i - 1][m] == 0:
                     area += 1
                 if grid[i][m - 1] == 0:
                     area += 1
