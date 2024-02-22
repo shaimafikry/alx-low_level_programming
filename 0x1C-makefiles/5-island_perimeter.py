@@ -24,5 +24,7 @@ def island_perimeter(grid):
                 if i+1 < len(grid):
                     if grid[i+1][m] == 0:
                         area += 1
+                else:
+                    return 0 
                     
     return area
