@@ -16,3 +16,5 @@ make file description:
 * (.PHONY): at the top of the file yo hold all targets you can use and excute it even there is no files
 * all: you put all the functions to be done once you call (make) , other functions could be call by using (make function)
 * using (@) before the command : hides the command and shows only its result
+* when you use (make) it runs (gnumakefile, makefile, MakeFile) but of you want it to run a specific file with random name 
+	you may use (make -f filename)
