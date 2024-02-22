@@ -14,7 +14,11 @@ make file description:
 			- recipe: bunch of orders to be done (it could be bash commands ..etc)
 
 * (.PHONY): at the top of the file yo hold all targets you can use and excute it even there is no files
-* all: you put all the functions to be done once you call (make) , other functions could be call by using (make function)
+* (all): you put all the functions to be done once you call (make) , other functions could be call by using (make function)
 * using (@) before the command : hides the command and shows only its result
 * when you use (make) it runs (gnumakefile, makefile, MakeFile) but of you want it to run a specific file with random name 
 	you may use (make -f filename)
+* variables in makefile:
+	- defines variables at the top of the file
+	- its on UPPER CASE
+	- when  you get to use it you write it like $(variable_name) or $ {variable_name}
