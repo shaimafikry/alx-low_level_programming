@@ -1,7 +1,7 @@
 NAME = school
 CC = gcc
 SRC = main.c school.c m.h
-RM = /bin/rm -f
+RM = 
 OBJ = .o
 
 .PHONY: all clean fclean oclean re
@@ -12,7 +12,7 @@ $(NAME): $(SRC)
 
 #deletes all Emacs and Vim temporary files along with the executable
 clean:
-	$(RM) *~ *.swp *.swo $(NAME)
+	/bin/rm -f *~ *.swp *.swo $(NAME)
 
 #deletes the object files
 oclean:
