@@ -2,7 +2,7 @@ NAME = school
 CC = gcc
 SRC = main.c school.c m.h
 RM = rm -f
-OBJ = $(SRC:.c=.o)
+OBJ = .o
 
 .PHONY: all clean fclean oclean re
 all: $(NAME)
