@@ -12,7 +12,7 @@ $(NAME): $(SRC)
 
 #deletes all Emacs and Vim temporary files along with the executable
 clean:
-	rm -f *~ *.swp *.swo $(NAME)
+	rm *~ *.swp *.swo $(NAME)
 
 #deletes the object files
 oclean:
