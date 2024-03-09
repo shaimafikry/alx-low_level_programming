@@ -8,11 +8,11 @@ OBJ = .o
 all: $(NAME)
 
 $(NAME): $(SRC)
-	$(CC) $(CFLAGS) $^ -o $(NAME)
+	$(CC) $^ -o $(NAME)
 
 #deletes all Emacs and Vim temporary files along with the executable
 clean:
-	$(RM) *~ *.swp *.swo $(NAME)
+	rm -f *~ *.swp *.swo $(NAME)
 
 #deletes the object files
 oclean:
