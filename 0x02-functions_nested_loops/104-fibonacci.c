@@ -7,22 +7,23 @@
 
 int main(void)
 {
-	long n = 0;
+	int n;
 	long i = 1;
 	long m = 2;
 	long d = 0;
 
-
 	printf("%li, %li, ", i, m);
 
-		while (d <= 4000000)
+		for (n = 0; n < 96; n++)
 		{
 			d = m + i;
 			i = m;
 			m = d;
-			if (d % 2 == 0)
-				n+= d;
+			printf("%li", d);
+			if (n != 95)
+				printf(", ");
+			else
+				printf("\n");
 		}
-		printf("%li\n", n);
 		return (0);
 }
