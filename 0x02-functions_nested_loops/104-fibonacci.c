@@ -7,29 +7,22 @@
 
 int main(void)
 {
-	int n;
-	int arr[50];
-	arr[0] = 1;
-	arr[1] = 2;
+	long n = 0;
+	long i = 1;
+	long m = 2;
+	long d = 0;
 
-		for (n = 0; n < 50; n++)
+
+	printf("%li, %li, ", i, m);
+
+		while (d <= 4000000)
 		{
-			if (n >= 2)
-			{
-				arr[n] = arr[n - 1] + arr[n - 2];
-				if (n == 49)
-				{
-					printf("%u\n", arr[n]);
-				}
-				else
-				{
-					printf("%u, ", arr[n]);
-				}
-			}
-			else
-			{
-				printf("%d, ", arr[n]);
-			}
+			d = m + i;
+			i = m;
+			m = d;
+			if (d % 2 == 0)
+				n+= d;
 		}
+		printf("%li\n", n);
 		return (0);
 }
