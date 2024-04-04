@@ -8,28 +8,22 @@
 int main(void)
 {
 	int n;
-	int arr[50];
-	arr[0] = 1;
-	arr[1] = 2;
+	int i = 1;
+	int m = 2;
+	int d = 0;
+
+	printf("%d, %d, ", i, m);
 
 		for (n = 0; n < 50; n++)
 		{
-			if (n >= 2)
-			{
-				arr[n] = arr[n - 1] + arr[n - 2];
-				if (n == 49)
-				{
-					printf("%u\n", arr[n]);
-				}
-				else
-				{
-					printf("%u, ", arr[n]);
-				}
-			}
+			d = m + i;
+			i = m;
+			m = d;
+			printf("%u", d);
+			if (n != 49)
+				printf(", ");
 			else
-			{
-				printf("%d, ", arr[n]);
-			}
+				printf("\n");
 		}
 		return (0);
 }
