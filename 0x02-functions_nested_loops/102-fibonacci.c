@@ -8,9 +8,9 @@
 int main(void)
 {
 	int n;
-	int i = 1;
-	int m = 2;
-	int d = 0;
+	unsigned int i = 1;
+	unsigned int m = 2;
+	unsigned int d = 0;
 
 	printf("%d, %d, ", i, m);
 
