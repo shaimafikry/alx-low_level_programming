@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	long n = 0;
+	long n = 2;
 	long i = 1;
 	long m = 2;
 	long d = 0;
@@ -18,7 +18,7 @@ int main(void)
 			i = m;
 			m = d;
 			if (d % 2 == 0)
-				n+= d;
+				n += d;
 		}
 		printf("%li\n", n);
 		return (0);
