@@ -8,18 +8,18 @@
 int main(void)
 {
 	int n;
-	unsigned int i = 1;
-	unsigned int m = 2;
-	unsigned int d = 0;
+	long i = 1;
+	long m = 2;
+	long d = 0;
 
-	printf("%d, %d, ", i, m);
+	printf("%li, %li, ", i, m);
 
 		for (n = 0; n < 48; n++)
 		{
 			d = m + i;
 			i = m;
 			m = d;
-			printf("%u", d);
+			printf("%li", d);
 			if (n != 47)
 				printf(", ");
 			else
