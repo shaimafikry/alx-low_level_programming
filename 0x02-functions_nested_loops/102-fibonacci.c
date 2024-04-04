@@ -14,13 +14,13 @@ int main(void)
 
 	printf("%d, %d, ", i, m);
 
-		for (n = 2; n < 50; n++)
+		for (n = 0; n < 48; n++)
 		{
 			d = m + i;
 			i = m;
 			m = d;
 			printf("%u", d);
-			if (n != 49)
+			if (n != 47)
 				printf(", ");
 			else
 				printf("\n");
