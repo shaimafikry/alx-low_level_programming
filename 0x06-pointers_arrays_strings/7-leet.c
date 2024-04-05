@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _leet - function that encodes a string into 1337.
+ * leet - function that encodes a string into 1337.
  * @str : a pointer to char
  * Return: return pointer to dest
  */
@@ -8,8 +8,9 @@
 char *leet(char *str)
 {
 	int i = 0, m = 0;
-	char *let = "44007733";
-	char *cr = "aAoOtTeE";
+	char *let = "4400773311";
+	char *cr = "aAoOtTeElL";
+
 	while (str[i] != '\0')
 	{
 		m = 0;
