@@ -9,10 +9,8 @@
 char *rot13(char *str)
 {
 	int i = 0, m = 0;
-	char *alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	"ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	"abcdefghijklmnopqrstuvwxyz"
-	"abcdefghijklmnopqrstuvwxyz";
+	char *alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ\
+abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
 
 	while (str[i] != '\0')
 	{
