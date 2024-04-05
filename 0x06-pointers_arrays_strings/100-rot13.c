@@ -8,18 +8,24 @@
 
 char *rot13(char *str)
 {
-	int i = 0;
+	int i = 0, m = 0;
+	char *alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	"ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	"abcdefghijklmnopqrstuvwxyz"
+	"abcdefghijklmnopqrstuvwxyz";
 
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 'a' && str[i] <= 'm')
-		str[i] += 13;
-		else if (str[i] >= 'A' && str[i] <= 'M')
-		str[i] += 13;
-		else if (str[i] >= 'n' && str[i] <= 'z')
-		str[i] -= 13;
-		else if (str[i] >= 'N' && str[i] <= 'Z')
-		str[i] -= 13;
+		m = 0;
+		while (alpha[m] != '\0')
+		{
+			if  (str[i] == alpha[m])
+			{
+				str[i] = alpha[m + 13];
+				break;
+			}
+			m++;
+		}
 		i++;
 	}
 	return (str);
