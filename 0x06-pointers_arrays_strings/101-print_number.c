@@ -8,30 +8,31 @@
 
 void print_number(int n)
 {
-	int i = 0, x = 0, base = 1;
-	int num = n;
+	int x = 0, base = 1;
+	int num;
 
-	if (num < 0)
+	if (n == 0)
 	{
-		_putchar('-');
-		num = num * -1;
+		putchar('0');
+		return;
 	}
+	if (n < 0)
+	{
+		putchar('-');
+		n = n * -1;
+	}
+	num = n;
 	/*know the number base*/
 	while (n)
 	{
 		n = n / 10;
-		i++;
-	}
-	while (i != 0)
-	{
 		base *= 10;
-		i--;
 	}
-	while (num)
+	while (base > 1)
 	{
 		base = base / 10;
 		x = num / base;
-		_putchar(x + '0');
+		putchar(x + '0');
 		num = num % base;
 	}
 }
