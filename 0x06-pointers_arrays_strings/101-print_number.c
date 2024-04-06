@@ -1,11 +1,37 @@
 #include "main.h"
 
 /**
- * _strcpy - copy strings src to dest
- * @dest : a pointer to char
- * @src  : a pointer to char
- * Return: return pointer to dest
+ * print_number - print number as string
+ * @n : a num
+ * Return: no return
  */
 
-*_strcat(char *dest, char *src)
+void print_number(int n)
+{
+	int i = 0, x = 0, base = 1;
+	int num = n;
 
+	if (num < 0)
+	{
+		_putchar('-');
+		num = num * -1;
+	}
+	/*know the number base*/
+	while (n)
+	{
+		n = n / 10;
+		i++;
+	}
+	while (i != 0)
+	{
+		base *= 10;
+		i--;
+	}
+	while (num)
+	{
+		base = base / 10;
+		x = num / base;
+		_putchar(x + '0');
+		num = num % base;
+	}
+}
