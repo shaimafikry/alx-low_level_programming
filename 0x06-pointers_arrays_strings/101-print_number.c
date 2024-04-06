@@ -13,12 +13,12 @@ void print_number(int n)
 
 	if (n == 0)
 	{
-		putchar('0');
+		_putchar('0');
 		return;
 	}
 	if (n < 0)
 	{
-		putchar('-');
+		_putchar('-');
 		n = n * -1;
 	}
 	num = n;
@@ -32,7 +32,7 @@ void print_number(int n)
 	{
 		base = base / 10;
 		x = num / base;
-		putchar(x + '0');
+		_putchar(x + '0');
 		num = num % base;
 	}
 }
