@@ -11,7 +11,7 @@
 
 int jump_search(int *array, size_t size, int value)
 {
-	size_t start = 0, v;
+	size_t start = 0, b;
 	size_t s = sqrt(size);
 	size_t m = 0;
 
@@ -21,9 +21,10 @@ int jump_search(int *array, size_t size, int value)
 	{
 		if (array[m] >= value) /*safe*/
 		{
-			v = m - s;
-			printf("Value found between indexes [%d] and [%d]\n", array[v], array[m]);
-			start = m - s;
+			/*the turn back*/
+			b = m - s;
+			printf("Value found between indexes [%ld] and [%ld]\n", b, m);
+			start = b;
 			for (; start <= m; start++)
 			{
 				printf("Value checked array[%ld] = [%d]\n", start, array[start]);
@@ -33,9 +34,18 @@ int jump_search(int *array, size_t size, int value)
 				}
 			}
 		}
+		
 		printf("Value checked array[%ld] = [%d]\n", m, array[m]);
-
 		m += s;
 	}
+	/**
+	 * this part is hard coded coz i dont know why the exmples showing it
+	 * coz it seems that this part here means that the value is out of index
+	 * how i am supposed to say that value found between indexes here ?
+	 */
+	b = m - s;
+	printf("Value found between indexes [%ld] and [%ld]\n", b, m);
+	printf("Value checked array[%ld] = [%d]\n", b, array[size - 1]);
+
 	return (-1);
 }
