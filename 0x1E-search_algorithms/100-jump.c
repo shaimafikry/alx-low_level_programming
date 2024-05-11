@@ -34,14 +34,13 @@ int jump_search(int *array, size_t size, int value)
 				}
 			}
 		}
-		
 		printf("Value checked array[%ld] = [%d]\n", m, array[m]);
 		m += s;
 	}
 	/**
-	 * this part is hard coded coz i dont know why the exmples showing it
-	 * coz it seems that this part here means that the value is out of index
-	 * how i am supposed to say that value found between indexes here ?
+	 * This part is hard-coded coz I don't know why the example have it
+	 * coz it seems that this part here means that the value is out of the index
+	 * how i am supposed to say that value is found between indexes here?
 	 */
 	b = m - s;
 	printf("Value found between indexes [%ld] and [%ld]\n", b, m);
